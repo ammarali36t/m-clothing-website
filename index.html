@@ -97,7 +97,7 @@
 
   <!-- Top Announcement Bar -->
   <div class="bg-espresso text-cream text-[10px] sm:text-xs tracking-[0.14em] sm:tracking-[0.18em] uppercase py-1.5 px-3 sm:px-4 text-center border-b border-gold/20">
-    <span class="hidden sm:inline">Bespoke Tailoring, Unstitched Luxury Fabrics &amp; Handcrafted Leather — Flagship Store &amp; Nationwide Delivery</span>
+    <span id="announcement-desktop" class="hidden sm:inline">Bespoke Tailoring, Unstitched Luxury Fabrics &amp; Handcrafted Leather — Flagship Store &amp; Nationwide Delivery</span>
     <span class="sm:hidden">Bespoke Tailoring &bull; Fine Suiting &bull; Heritage Leather</span>
   </div>
 
@@ -272,15 +272,15 @@
           <div class="lg:col-span-6 text-left">
             <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-ivory/10 border border-gold/40 backdrop-blur-sm mb-4 sm:mb-5">
               <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-gold shrink-0"></span>
-              <span class="text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.2em] text-cream font-medium">Unstitched Fabrics &bull; Bespoke &bull; Leather</span>
+              <span id="hero-eyebrow" class="text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.2em] text-cream font-medium">Unstitched Fabrics &bull; Bespoke &bull; Leather</span>
             </div>
 
             <h1 class="font-serif text-3xl sm:text-5xl xl:text-6xl font-semibold tracking-tight leading-[1.08] text-ivory mb-4 sm:mb-5">
-              CRAFTED FOR <br />
-              <span class="italic font-normal text-goldLight">GENERATIONS.</span>
+              <span id="hero-heading-line1">CRAFTED FOR</span> <br />
+              <span id="hero-heading-line2" class="italic font-normal text-goldLight">GENERATIONS.</span>
             </h1>
 
-            <p class="text-xs sm:text-base text-cream/90 font-light leading-relaxed mb-6 sm:mb-7 max-w-lg">
+            <p id="hero-description" class="text-xs sm:text-base text-cream/90 font-light leading-relaxed mb-6 sm:mb-7 max-w-lg">
               At <strong class="font-semibold text-ivory">M.</strong>, every thread tells a story of patience and precision. Explore mill-direct suiting fabrics, master-tailored silhouettes, and full-grain leather essentials built to age with distinction.
             </p>
 
@@ -298,7 +298,7 @@
           <div class="lg:col-span-6">
             <div id="hero-slider-container" class="relative rounded-2xl overflow-hidden border border-gold/35 shadow-2xl bg-[#1C1410] select-none">
               <div id="hero-slider-track" class="flex transition-transform duration-700 ease-out">
-                <!-- Populated dynamically from SITE_DATA.heroSlides -->
+                <!-- Populated dynamically from CMS -->
               </div>
 
               <!-- Slide Indicator Dots, Mobile Controls & Counter Bar -->
@@ -503,6 +503,7 @@
         <div class="relative">
           <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border border-sand bg-espresso">
             <img
+              id="story-image"
               src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=80"
               alt="M. Bespoke Craftsmanship"
               onerror="this.src='https://placehold.co/1000x750/2B211B/FAF6F0?text=M.+Flagship+Atelier'"
@@ -552,7 +553,7 @@
     <!-- =================================================================== -->
     <section id="ceo-message-section" class="pt-4 sm:pt-6 pb-14 sm:pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div id="ceo-card-container" class="bg-cream rounded-2xl sm:rounded-3xl border border-gold/40 shadow-xl overflow-hidden">
-        <!-- Populated dynamically from SITE_DATA.ceoMessage -->
+        <!-- Populated dynamically from CMS -->
       </div>
     </section>
 
@@ -808,7 +809,7 @@
                 </div>
                 <div>
                   <p class="font-semibold text-espresso text-xs uppercase tracking-wider">Boutique Address</p>
-                  <a href="https://maps.app.goo.gl/YsAfsfZrYFQtzKxn8" target="_blank" rel="noopener noreferrer" class="text-bronze hover:text-terracotta underline-offset-4 hover:underline mt-0.5 block">
+                  <a id="contact-address-link" href="https://maps.app.goo.gl/YsAfsfZrYFQtzKxn8" target="_blank" rel="noopener noreferrer" class="text-bronze hover:text-terracotta underline-offset-4 hover:underline mt-0.5 block">
                     Talagang Hwy, near Bachat Mall, Chakwal, 48800, Punjab, Pakistan
                   </a>
                 </div>
@@ -820,7 +821,7 @@
                 </div>
                 <div>
                   <p class="font-semibold text-espresso text-xs uppercase tracking-wider">Telephone &amp; WhatsApp</p>
-                  <a href="tel:+923145656060" class="text-bronze hover:text-terracotta mt-0.5 block font-medium">0314 5656060</a>
+                  <a id="contact-phone-link" href="tel:+923145656060" class="text-bronze hover:text-terracotta mt-0.5 block font-medium">0314 5656060</a>
                   <p class="text-xs text-bronze/80 mt-0.5">Direct WhatsApp concierge available during studio hours</p>
                 </div>
               </div>
@@ -831,7 +832,7 @@
                 </div>
                 <div>
                   <p class="font-semibold text-espresso text-xs uppercase tracking-wider">Client Inquiries</p>
-                  <p class="text-bronze mt-0.5">concierge@m-creations.pk</p>
+                  <p id="contact-email-text" class="text-bronze mt-0.5">concierge@m-creations.pk</p>
                 </div>
               </div>
 
@@ -841,14 +842,14 @@
                 </div>
                 <div>
                   <p class="font-semibold text-espresso text-xs uppercase tracking-wider">Atelier Hours</p>
-                  <p class="text-bronze mt-0.5">Monday – Sunday: 10:00 AM – 10:00 PM</p>
+                  <p id="contact-hours-text" class="text-bronze mt-0.5">Monday – Sunday: 10:00 AM – 10:00 PM</p>
                   <p class="text-xs text-bronze/80 mt-0.5">Open 7 days a week</p>
                 </div>
               </div>
             </div>
 
             <div class="pt-4 border-t border-sand flex flex-wrap gap-3">
-              <a href="https://maps.app.goo.gl/YsAfsfZrYFQtzKxn8" target="_blank" rel="noopener noreferrer" class="flex-1 min-w-[140px] py-2.5 px-4 rounded-lg bg-espresso hover:bg-terracotta text-ivory text-xs uppercase tracking-widest font-semibold text-center transition">
+              <a id="contact-maps-btn" href="https://maps.app.goo.gl/YsAfsfZrYFQtzKxn8" target="_blank" rel="noopener noreferrer" class="flex-1 min-w-[140px] py-2.5 px-4 rounded-lg bg-espresso hover:bg-terracotta text-ivory text-xs uppercase tracking-widest font-semibold text-center transition">
                 <i class="fa-solid fa-diamond-turn-right mr-1.5"></i> Open in Maps
               </a>
               <button onclick="navigateToSection('bespoke')" class="flex-1 min-w-[140px] py-2.5 px-4 rounded-lg border border-espresso text-espresso hover:bg-espresso hover:text-ivory text-xs uppercase tracking-widest font-semibold text-center transition">
@@ -918,12 +919,11 @@
   </section>
 
   <!-- ===================================================================== -->
-  <!-- FOOTER (4-COLUMN LAYOUT WITH LOCATION, COLLECTIONS & CONTACT LINKS)    -->
+  <!-- FOOTER                                                                -->
   <!-- ===================================================================== -->
   <footer class="bg-espresso text-cream pt-12 sm:pt-16 pb-10 px-4 sm:px-6 lg:px-8 border-t border-gold/20">
     <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 pb-10 sm:pb-12 border-b border-cream/15">
       
-      <!-- Column 1: Brand Emblem & Tagline -->
       <div class="space-y-4">
         <button onclick="navigateTo('home')" class="h-14 w-auto aspect-[195/145] block text-left">
           <svg viewBox="0 0 195 145" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-full w-full">
@@ -956,7 +956,6 @@
         </p>
       </div>
 
-      <!-- Column 2: Collections & Pages -->
       <div>
         <h4 class="font-serif text-lg font-semibold text-ivory mb-4">Collections</h4>
         <ul class="space-y-2.5 text-xs text-cream/80 tracking-wider uppercase">
@@ -968,26 +967,25 @@
         </ul>
       </div>
 
-      <!-- Column 3: Flagship Store Location & Contact -->
       <div>
         <h4 class="font-serif text-lg font-semibold text-ivory mb-4">Flagship Store</h4>
         <ul class="space-y-2.5 text-xs text-cream/80 leading-relaxed">
           <li class="flex items-start gap-2.5">
             <i class="fa-solid fa-location-dot text-goldLight mt-1 shrink-0"></i>
-            <a href="https://maps.app.goo.gl/YsAfsfZrYFQtzKxn8" target="_blank" rel="noopener noreferrer" class="hover:text-goldLight transition">
+            <a id="footer-address-link" href="https://maps.app.goo.gl/YsAfsfZrYFQtzKxn8" target="_blank" rel="noopener noreferrer" class="hover:text-goldLight transition">
               Talagang Hwy, near Bachat Mall, Chakwal, 48800, Punjab, Pakistan
             </a>
           </li>
           <li class="flex items-center gap-2.5">
             <i class="fa-solid fa-clock text-goldLight shrink-0"></i>
-            <span>Mon – Sun: 10:00 AM – 10:00 PM</span>
+            <span id="footer-hours-text">Mon – Sun: 10:00 AM – 10:00 PM</span>
           </li>
           <li class="flex items-center gap-2.5">
             <i class="fa-solid fa-phone text-goldLight shrink-0"></i>
-            <a href="tel:+923145656060" class="hover:text-goldLight transition">0314 5656060</a>
+            <a id="footer-phone-link" href="tel:+923145656060" class="hover:text-goldLight transition">0314 5656060</a>
           </li>
           <li class="pt-1 flex items-center gap-4">
-            <a href="https://maps.app.goo.gl/YsAfsfZrYFQtzKxn8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-goldLight hover:underline uppercase tracking-widest font-semibold text-[11px]">
+            <a id="footer-maps-link" href="https://maps.app.goo.gl/YsAfsfZrYFQtzKxn8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-goldLight hover:underline uppercase tracking-widest font-semibold text-[11px]">
               <i class="fa-solid fa-diamond-turn-right"></i> Google Maps
             </a>
             <button onclick="navigateTo('contact')" class="inline-flex items-center gap-1.5 text-cream/90 hover:text-goldLight hover:underline uppercase tracking-widest font-semibold text-[11px]">
@@ -997,7 +995,6 @@
         </ul>
       </div>
 
-      <!-- Column 4: Private Trunk Shows Newsletter -->
       <div>
         <h4 class="font-serif text-lg font-semibold text-ivory mb-4">Private Trunk Shows</h4>
         <p class="text-xs text-cream/75 leading-relaxed mb-4">
@@ -1019,7 +1016,7 @@
       <div class="flex items-center gap-5 text-base">
         <a href="#" aria-label="Instagram" class="hover:text-goldLight transition"><i class="fa-brands fa-instagram"></i></a>
         <a href="#" aria-label="Facebook" class="hover:text-goldLight transition"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://wa.me/923145656060" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="hover:text-goldLight transition"><i class="fa-brands fa-whatsapp"></i></a>
+        <a id="footer-whatsapp-link" href="https://wa.me/923145656060" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="hover:text-goldLight transition"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
     </div>
   </footer>
@@ -1093,47 +1090,63 @@
     <span id="toast-message">Added to bag</span>
   </div>
 
-  <!-- Application Logic & Pages CMS Data Loader -->
+  <!-- Application Logic & Modular Pages CMS Loader -->
   <script>
     const DEFAULT_SITE_DATA = {
-      heroSlides: [
-        {
-          stepLabel: "01 / Bespoke Atelier",
-          title: "Bespoke Tailored Charcoal Suiting",
-          ctaText: "Explore",
-          targetPage: "suiting",
-          image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1200&q=85"
-        },
-        {
-          stepLabel: "02 / Mill-Direct Weaves",
-          title: "Fine Unstitched Wool & Egyptian Cotton",
-          ctaText: "Shop Fabrics",
-          targetPage: "suiting",
-          image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1200&q=85"
-        },
-        {
-          stepLabel: "03 / Saddle-Stitched Hide",
-          title: "Handcrafted Full-Grain Heritage Leather",
-          ctaText: "Shop Leather",
-          targetPage: "leather",
-          image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1200&q=85"
-        },
-        {
-          stepLabel: "04 / Ceremonial Silhouettes",
-          title: "Luxury Menswear Atelier Craftsmanship",
-          ctaText: "All Collections",
-          targetPage: "collections",
-          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=85"
+      landing: {
+        heroEyebrow: "Unstitched Fabrics • Bespoke • Leather",
+        heroHeadingLine1: "CRAFTED FOR",
+        heroHeadingLine2: "GENERATIONS.",
+        heroDescription: "At M., every thread tells a story of patience and precision. Explore mill-direct suiting fabrics, master-tailored silhouettes, and full-grain leather essentials built to age with distinction.",
+        heroSlides: [
+          {
+            stepLabel: "01 / Bespoke Atelier",
+            title: "Bespoke Tailored Charcoal Suiting",
+            ctaText: "Explore",
+            targetPage: "suiting",
+            image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1200&q=85"
+          },
+          {
+            stepLabel: "02 / Mill-Direct Weaves",
+            title: "Fine Unstitched Wool & Egyptian Cotton",
+            ctaText: "Shop Fabrics",
+            targetPage: "suiting",
+            image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1200&q=85"
+          },
+          {
+            stepLabel: "03 / Saddle-Stitched Hide",
+            title: "Handcrafted Full-Grain Heritage Leather",
+            ctaText: "Shop Leather",
+            targetPage: "leather",
+            image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1200&q=85"
+          },
+          {
+            stepLabel: "04 / Ceremonial Silhouettes",
+            title: "Luxury Menswear Atelier Craftsmanship",
+            ctaText: "All Collections",
+            targetPage: "collections",
+            image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=85"
+          }
+        ],
+        ceoMessage: {
+          eyebrow: "From the Founder’s Desk",
+          quote: "True luxury never shouts—it is felt in the quiet weight of long-staple cotton, the discipline of a hand-basted lapel, and leather that grows more dignified with every passing decade.",
+          messageBody: "When we opened the doors of M. in Chakwal, our promise was simple: to bring honest mill-direct textiles, uncompromising bespoke tailoring, and full-grain leathercraft together under one roof. Every piece that bears our needle-and-button mark is inspected personally so that what you wear today becomes an heirloom tomorrow.",
+          founderName: "Jawad Ali",
+          roleTitle: "Founder & Chief Executive Officer, M.",
+          locationNote: "Flagship Atelier — Chakwal",
+          portraitImage: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=85"
         }
-      ],
-      ceoMessage: {
-        eyebrow: "From the Founder’s Desk",
-        quote: "True luxury never shouts—it is felt in the quiet weight of long-staple cotton, the discipline of a hand-basted lapel, and leather that grows more dignified with every passing decade.",
-        messageBody: "When we opened the doors of M. in Chakwal, our promise was simple: to bring honest mill-direct textiles, uncompromising bespoke tailoring, and full-grain leathercraft together under one roof. Every piece that bears our needle-and-button mark is inspected personally so that what you wear today becomes an heirloom tomorrow.",
-        founderName: "Jawad Ali",
-        roleTitle: "Founder & Chief Executive Officer, M.",
-        locationNote: "Flagship Atelier — Chakwal",
-        portraitImage: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=85"
+      },
+      settings: {
+        announcementText: "Bespoke Tailoring, Unstitched Luxury Fabrics & Handcrafted Leather — Flagship Store & Nationwide Delivery",
+        address: "Talagang Hwy, near Bachat Mall, Chakwal, 48800, Punjab, Pakistan",
+        mapsUrl: "https://maps.app.goo.gl/YsAfsfZrYFQtzKxn8",
+        phoneDisplay: "0314 5656060",
+        phoneDial: "+923145656060",
+        whatsappNumber: "923145656060",
+        email: "concierge@m-creations.pk",
+        hours: "Mon – Sun: 10:00 AM – 10:00 PM"
       },
       products: [
         {
@@ -1141,7 +1154,6 @@
           featured: true,
           name: "Imperial Giza 86 Egyptian Cotton",
           category: "suiting",
-          categoryLabel: "Fine Suiting",
           pricePKR: 9500,
           unit: "4.5m Unstitched Cut",
           colors: ["#F4EFE6", "#2C353D", "#C8B89D"],
@@ -1155,7 +1167,6 @@
           featured: true,
           name: "The Heritage Saddle Weekender",
           category: "leather",
-          categoryLabel: "Heritage Leather",
           pricePKR: 28500,
           unit: "Full-Grain Cowhide",
           colors: ["#6F331E", "#2B211B"],
@@ -1169,7 +1180,6 @@
           featured: true,
           name: "Super 130s Merino Wool Suiting",
           category: "suiting",
-          categoryLabel: "Fine Suiting",
           pricePKR: 16800,
           unit: "4m Suiting Length",
           colors: ["#262930", "#4A3B32", "#595D62"],
@@ -1183,7 +1193,6 @@
           featured: true,
           name: "Artisanal Jamawar & Raw Silk Waistcoat",
           category: "tailored",
-          categoryLabel: "Tailored Essentials",
           pricePKR: 12900,
           unit: "Ready-to-Wear / Bespoke",
           colors: ["#3B2C24", "#83371E", "#D5C7B2"],
@@ -1197,7 +1206,6 @@
           featured: false,
           name: "Hand-Burnished Dress Belt & Folio Set",
           category: "leather",
-          categoryLabel: "Heritage Leather",
           pricePKR: 8200,
           unit: "Vegetable-Tanned Leather",
           colors: ["#7B3B24", "#231B16"],
@@ -1211,7 +1219,6 @@
           featured: false,
           name: "Royal Boski Finish Wash & Wear",
           category: "suiting",
-          categoryLabel: "Fine Suiting",
           pricePKR: 7800,
           unit: "4.5m Unstitched Cut",
           colors: ["#F2E6D0", "#3D4849", "#242424"],
@@ -1225,7 +1232,6 @@
           featured: false,
           name: "Hand-Stitched Leather Peshawari & Derby",
           category: "leather",
-          categoryLabel: "Heritage Leather",
           pricePKR: 11500,
           unit: "Goodyear Welted Sole",
           colors: ["#5C2E1E", "#1F1A17"],
@@ -1239,7 +1245,6 @@
           featured: false,
           name: "Tailored Ceremonial Prince Coat",
           category: "tailored",
-          categoryLabel: "Tailored Essentials",
           pricePKR: 24500,
           unit: "Bespoke / Standard Fit",
           colors: ["#2B211B", "#3A433E"],
@@ -1253,7 +1258,6 @@
           featured: false,
           name: "Executive Leather Briefcase & Laptop Satchel",
           category: "leather",
-          categoryLabel: "Heritage Leather",
           pricePKR: 21000,
           unit: "Fits up to 16\" Laptop",
           colors: ["#83371E", "#3B2C24"],
@@ -1285,46 +1289,106 @@
       return map[product.category] || 'Collection Piece';
     }
 
-    async function loadPagesCmsContent() {
+    async function fetchJsonSafe(url) {
       try {
-        const response = await fetch(`./content/site-data.json?v=${Date.now()}`, { cache: 'no-store' });
-        if (!response.ok) return;
-
-        const cmsJson = await response.json();
-        if (cmsJson && typeof cmsJson === 'object') {
-          if (Array.isArray(cmsJson.heroSlides) && cmsJson.heroSlides.length > 0) {
-            SITE_DATA.heroSlides = cmsJson.heroSlides.map(s => ({
-              ...s,
-              image: resolveCmsImage(s.image)
-            }));
-          }
-          if (cmsJson.ceoMessage && typeof cmsJson.ceoMessage === 'object') {
-            SITE_DATA.ceoMessage = {
-              ...SITE_DATA.ceoMessage,
-              ...cmsJson.ceoMessage,
-              portraitImage: resolveCmsImage(cmsJson.ceoMessage.portraitImage || SITE_DATA.ceoMessage.portraitImage)
-            };
-          }
-          if (Array.isArray(cmsJson.products) && cmsJson.products.length > 0) {
-            SITE_DATA.products = cmsJson.products.map((p, idx) => ({
-              id: p.id || idx + 1,
-              featured: Boolean(p.featured),
-              name: p.name || 'Untitled Piece',
-              category: p.category || 'suiting',
-              categoryLabel: getCategoryLabel(p),
-              pricePKR: Number(p.pricePKR) || 0,
-              unit: p.unit || 'Standard Cut',
-              colors: Array.isArray(p.colors) && p.colors.length ? p.colors : ['#2B211B'],
-              colorNames: Array.isArray(p.colorNames) && p.colorNames.length ? p.colorNames : ['Classic'],
-              options: Array.isArray(p.options) && p.options.length ? p.options : ['Standard'],
-              image: resolveCmsImage(p.image),
-              description: p.description || ''
-            }));
-          }
-        }
-      } catch (err) {
-        console.info('Running with built-in DEFAULT_SITE_DATA fallback.');
+        const res = await fetch(`${url}?v=${Date.now()}`, { cache: 'no-store' });
+        if (!res.ok) return null;
+        return await res.json();
+      } catch {
+        return null;
       }
+    }
+
+    async function loadPagesCmsContent() {
+      const [landingData, productsData, settingsData] = await Promise.all([
+        fetchJsonSafe('./content/landing.json'),
+        fetchJsonSafe('./content/products.json'),
+        fetchJsonSafe('./content/settings.json')
+      ]);
+
+      if (landingData && typeof landingData === 'object') {
+        SITE_DATA.landing = {
+          ...SITE_DATA.landing,
+          ...landingData
+        };
+        if (Array.isArray(landingData.heroSlides) && landingData.heroSlides.length > 0) {
+          SITE_DATA.landing.heroSlides = landingData.heroSlides.map(s => ({
+            ...s,
+            image: resolveCmsImage(s.image)
+          }));
+        }
+        if (landingData.ceoMessage && typeof landingData.ceoMessage === 'object') {
+          SITE_DATA.landing.ceoMessage = {
+            ...SITE_DATA.landing.ceoMessage,
+            ...landingData.ceoMessage,
+            portraitImage: resolveCmsImage(landingData.ceoMessage.portraitImage || SITE_DATA.landing.ceoMessage.portraitImage)
+          };
+        }
+      }
+
+      if (productsData && Array.isArray(productsData.items) && productsData.items.length > 0) {
+        SITE_DATA.products = productsData.items.map((p, idx) => ({
+          id: p.id || idx + 1,
+          featured: Boolean(p.featured),
+          name: p.name || 'Untitled Piece',
+          category: p.category || 'suiting',
+          categoryLabel: getCategoryLabel(p),
+          pricePKR: Number(p.pricePKR) || 0,
+          unit: p.unit || 'Standard Cut',
+          colors: Array.isArray(p.colors) && p.colors.length ? p.colors : ['#2B211B'],
+          colorNames: Array.isArray(p.colorNames) && p.colorNames.length ? p.colorNames : ['Classic'],
+          options: Array.isArray(p.options) && p.options.length ? p.options : ['Standard'],
+          image: resolveCmsImage(p.image),
+          description: p.description || ''
+        }));
+      } else {
+        SITE_DATA.products = SITE_DATA.products.map(p => ({
+          ...p,
+          categoryLabel: getCategoryLabel(p)
+        }));
+      }
+
+      if (settingsData && typeof settingsData === 'object') {
+        SITE_DATA.settings = {
+          ...SITE_DATA.settings,
+          ...settingsData
+        };
+      }
+    }
+
+    function applyLandingAndSettingsContent() {
+      const l = SITE_DATA.landing;
+      const s = SITE_DATA.settings;
+
+      const setTxt = (id, val) => {
+        const el = document.getElementById(id);
+        if (el && val) el.textContent = val;
+      };
+
+      setTxt('hero-eyebrow', l.heroEyebrow);
+      setTxt('hero-heading-line1', l.heroHeadingLine1);
+      setTxt('hero-heading-line2', l.heroHeadingLine2);
+      setTxt('hero-description', l.heroDescription);
+
+      setTxt('announcement-desktop', s.announcementText);
+      setTxt('contact-address-link', s.address);
+      setTxt('footer-address-link', s.address);
+      setTxt('contact-phone-link', s.phoneDisplay);
+      setTxt('footer-phone-link', s.phoneDisplay);
+      setTxt('contact-email-text', s.email);
+      setTxt('contact-hours-text', s.hours);
+      setTxt('footer-hours-text', s.hours);
+
+      ['contact-address-link', 'contact-maps-btn', 'footer-address-link', 'footer-maps-link'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el && s.mapsUrl) el.href = s.mapsUrl;
+      });
+      ['contact-phone-link', 'footer-phone-link'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el && s.phoneDial) el.href = `tel:${s.phoneDial}`;
+      });
+      const wa = document.getElementById('footer-whatsapp-link');
+      if (wa && s.whatsappNumber) wa.href = `https://wa.me/${s.whatsappNumber}`;
     }
 
     let activePage = 'home';
@@ -1405,7 +1469,7 @@
     function renderCeoCard() {
       const container = document.getElementById('ceo-card-container');
       if (!container) return;
-      const ceo = SITE_DATA.ceoMessage;
+      const ceo = SITE_DATA.landing.ceoMessage;
 
       container.innerHTML = `
         <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
@@ -1460,9 +1524,10 @@
     function renderHeroSlides() {
       const track = document.getElementById('hero-slider-track');
       const dotsContainer = document.getElementById('hero-dots');
-      if (!track || !dotsContainer) return;
+      const slides = SITE_DATA.landing.heroSlides;
+      if (!track || !dotsContainer || !slides.length) return;
 
-      track.innerHTML = SITE_DATA.heroSlides.map(slide => `
+      track.innerHTML = slides.map(slide => `
         <div class="w-full shrink-0 relative aspect-[4/3] sm:aspect-[16/11]">
           <img
             src="${slide.image}"
@@ -1483,7 +1548,7 @@
         </div>
       `).join('');
 
-      dotsContainer.innerHTML = SITE_DATA.heroSlides.map((_, idx) => `
+      dotsContainer.innerHTML = slides.map((_, idx) => `
         <button onclick="goToHeroSlide(${idx})" aria-label="Slide ${idx + 1}" class="hero-dot ${idx === 0 ? 'w-6 bg-goldLight' : 'w-2 bg-cream/30 hover:bg-cream/60'} h-1.5 rounded-full transition-all"></button>
       `).join('');
 
@@ -1517,7 +1582,7 @@
       const ambientBg = document.getElementById('hero-ambient-bg');
       const counter = document.getElementById('hero-slide-counter');
       const dots = document.querySelectorAll('.hero-dot');
-      const slides = SITE_DATA.heroSlides;
+      const slides = SITE_DATA.landing.heroSlides;
 
       if (track) track.style.transform = `translateX(-${currentHeroSlide * 100}%)`;
       if (ambientBg && slides[currentHeroSlide]) ambientBg.src = slides[currentHeroSlide].image;
@@ -1535,13 +1600,15 @@
     }
 
     function nextHeroSlide() {
-      currentHeroSlide = (currentHeroSlide + 1) % SITE_DATA.heroSlides.length;
+      const len = SITE_DATA.landing.heroSlides.length;
+      currentHeroSlide = (currentHeroSlide + 1) % len;
       updateHeroSliderUI();
       startHeroAutoSlide();
     }
 
     function prevHeroSlide() {
-      currentHeroSlide = (currentHeroSlide - 1 + SITE_DATA.heroSlides.length) % SITE_DATA.heroSlides.length;
+      const len = SITE_DATA.landing.heroSlides.length;
+      currentHeroSlide = (currentHeroSlide - 1 + len) % len;
       updateHeroSliderUI();
       startHeroAutoSlide();
     }
@@ -1555,7 +1622,8 @@
     function startHeroAutoSlide() {
       clearInterval(heroAutoSlideTimer);
       heroAutoSlideTimer = setInterval(() => {
-        currentHeroSlide = (currentHeroSlide + 1) % SITE_DATA.heroSlides.length;
+        const len = SITE_DATA.landing.heroSlides.length;
+        currentHeroSlide = (currentHeroSlide + 1) % len;
         updateHeroSliderUI();
       }, 4500);
     }
@@ -1939,6 +2007,7 @@
 
     window.addEventListener('DOMContentLoaded', async () => {
       await loadPagesCmsContent();
+      applyLandingAndSettingsContent();
       renderHeroSlides();
       initHeroTouchSwipe();
       renderCeoCard();

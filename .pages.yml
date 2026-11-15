@@ -3,26 +3,68 @@ media:
   output: assets/uploads
 
 content:
-  - name: site-content
-    label: Storefront, Products & CEO Note
-    path: content/site-data.json
+  - name: landing-page
+    label: Landing Page (Hero & CEO Note)
+    path: content/landing.json
     type: file
     fields:
+      - name: heroEyebrow
+        label: Top Hero Badge Text
+        type: string
+      - name: heroHeadingLine1
+        label: Hero Main Headline (Line 1)
+        type: string
+      - name: heroHeadingLine2
+        label: Hero Gold Italic Headline (Line 2)
+        type: string
+      - name: heroDescription
+        label: Hero Description Paragraph
+        type: text
+
+      - name: heroSlides
+        label: Home Page Hero Slider Images
+        type: object
+        list: true
+        fields:
+          - name: stepLabel
+            label: Slide Subtitle (e.g. 01 / Bespoke Atelier)
+            type: string
+          - name: title
+            label: Slide Headline
+            type: string
+          - name: ctaText
+            label: Link Text
+            type: string
+          - name: targetPage
+            label: Destination Page
+            type: select
+            options:
+              values:
+                - value: suiting
+                  label: Fine Suiting Page
+                - value: leather
+                  label: Heritage Leather Page
+                - value: collections
+                  label: All Collections Page
+          - name: image
+            label: Slide Image (Upload from computer or select from Media)
+            type: image
+
       - name: ceoMessage
-        label: Founder & CEO Editorial Card
+        label: Founder & CEO Editorial Card (Bottom of Home Page)
         type: object
         fields:
           - name: portraitImage
-            label: CEO Portrait Photo
+            label: CEO Portrait Photo (Upload from computer)
             type: image
           - name: founderName
             label: Founder / CEO Name
             type: string
           - name: roleTitle
-            label: Title
+            label: Role Title
             type: string
           - name: eyebrow
-            label: Top Label
+            label: Card Eyebrow Label
             type: string
           - name: quote
             label: Highlighted Quote
@@ -34,8 +76,13 @@ content:
             label: Atelier Badge Text
             type: string
 
-      - name: products
-        label: Products Catalog (Suiting, Leather & Tailored)
+  - name: products-catalog
+    label: Products Catalog (Suiting, Leather & Tailored)
+    path: content/products.json
+    type: file
+    fields:
+      - name: items
+        label: All Products
         type: object
         list: true
         fields:
@@ -66,7 +113,7 @@ content:
             label: Cut / Material Subtitle (e.g. 4.5m Unstitched Cut)
             type: string
           - name: image
-            label: Product Photo
+            label: Product Photo (Upload from computer)
             type: image
           - name: description
             label: Product Description
@@ -84,31 +131,32 @@ content:
             type: string
             list: true
 
-      - name: heroSlides
-        label: Home Page Hero Slider
-        type: object
-        list: true
-        fields:
-          - name: stepLabel
-            label: Slide Subtitle (e.g. 01 / Bespoke Atelier)
-            type: string
-          - name: title
-            label: Slide Headline
-            type: string
-          - name: ctaText
-            label: Link Text
-            type: string
-          - name: targetPage
-            label: Destination Page
-            type: select
-            options:
-              values:
-                - value: suiting
-                  label: Fine Suiting Page
-                - value: leather
-                  label: Heritage Leather Page
-                - value: collections
-                  label: All Collections Page
-          - name: image
-            label: Slide Image
-            type: image
+  - name: site-settings
+    label: Store Location, Hours & Contact
+    path: content/settings.json
+    type: file
+    fields:
+      - name: announcementText
+        label: Top Announcement Bar Text
+        type: string
+      - name: address
+        label: Flagship Boutique Address
+        type: string
+      - name: mapsUrl
+        label: Google Maps Link
+        type: string
+      - name: phoneDisplay
+        label: Phone / WhatsApp Display Number
+        type: string
+      - name: phoneDial
+        label: Phone Dial Format (e.g. +923145656060)
+        type: string
+      - name: whatsappNumber
+        label: WhatsApp Link Digits (e.g. 923145656060)
+        type: string
+      - name: email
+        label: Concierge Email Address
+        type: string
+      - name: hours
+        label: Boutique Opening Hours
+        type: string
