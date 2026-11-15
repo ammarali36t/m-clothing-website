@@ -1271,12 +1271,13 @@
 
     let SITE_DATA = structuredClone(DEFAULT_SITE_DATA);
 
-    function resolveCmsImage(path) {
-      if (!path) return '';
-      if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:')) {
-        return path;
+    function resolveCmsImage(path, fallback = '') {
+      if (!path || typeof path !== 'string' || !path.trim()) return fallback;
+      const clean = path.trim();
+      if (clean.startsWith('http://') || clean.startsWith('https://') || clean.startsWith('data:')) {
+        return clean;
       }
-      return path.startsWith('./') || path.startsWith('/') ? path : `./${path}`;
+      return clean.startsWith('./') || clean.startsWith('/') ? clean : `./${clean}`;
     }
 
     function getCategoryLabel(product) {
@@ -1307,40 +1308,47 @@
       ]);
 
       if (landingData && typeof landingData === 'object') {
+        const defaultSlides = DEFAULT_SITE_DATA.landing.heroSlides;
         SITE_DATA.landing = {
           ...SITE_DATA.landing,
           ...landingData
         };
         if (Array.isArray(landingData.heroSlides) && landingData.heroSlides.length > 0) {
-          SITE_DATA.landing.heroSlides = landingData.heroSlides.map(s => ({
-            ...s,
-            image: resolveCmsImage(s.image)
-          }));
+          SITE_DATA.landing.heroSlides = landingData.heroSlides.map((s, idx) => {
+            const fallbackSlideImg = defaultSlides[idx % defaultSlides.length]?.image || '';
+            return {
+              ...s,
+              image: resolveCmsImage(s.image, fallbackSlideImg)
+            };
+          });
         }
         if (landingData.ceoMessage && typeof landingData.ceoMessage === 'object') {
           SITE_DATA.landing.ceoMessage = {
             ...SITE_DATA.landing.ceoMessage,
             ...landingData.ceoMessage,
-            portraitImage: resolveCmsImage(landingData.ceoMessage.portraitImage || SITE_DATA.landing.ceoMessage.portraitImage)
+            portraitImage: resolveCmsImage(landingData.ceoMessage.portraitImage, DEFAULT_SITE_DATA.landing.ceoMessage.portraitImage)
           };
         }
       }
 
       if (productsData && Array.isArray(productsData.items) && productsData.items.length > 0) {
-        SITE_DATA.products = productsData.items.map((p, idx) => ({
-          id: p.id || idx + 1,
-          featured: Boolean(p.featured),
-          name: p.name || 'Untitled Piece',
-          category: p.category || 'suiting',
-          categoryLabel: getCategoryLabel(p),
-          pricePKR: Number(p.pricePKR) || 0,
-          unit: p.unit || 'Standard Cut',
-          colors: Array.isArray(p.colors) && p.colors.length ? p.colors : ['#2B211B'],
-          colorNames: Array.isArray(p.colorNames) && p.colorNames.length ? p.colorNames : ['Classic'],
-          options: Array.isArray(p.options) && p.options.length ? p.options : ['Standard'],
-          image: resolveCmsImage(p.image),
-          description: p.description || ''
-        }));
+        SITE_DATA.products = productsData.items.map((p, idx) => {
+          const defaultProd = DEFAULT_SITE_DATA.products.find(dp => dp.id === p.id) || DEFAULT_SITE_DATA.products[idx % DEFAULT_SITE_DATA.products.length];
+          return {
+            id: p.id || idx + 1,
+            featured: Boolean(p.featured),
+            name: p.name || 'Untitled Piece',
+            category: p.category || 'suiting',
+            categoryLabel: getCategoryLabel(p),
+            pricePKR: Number(p.pricePKR) || 0,
+            unit: p.unit || 'Standard Cut',
+            colors: Array.isArray(p.colors) && p.colors.length ? p.colors : ['#2B211B'],
+            colorNames: Array.isArray(p.colorNames) && p.colorNames.length ? p.colorNames : ['Classic'],
+            options: Array.isArray(p.options) && p.options.length ? p.options : ['Standard'],
+            image: resolveCmsImage(p.image, defaultProd?.image || ''),
+            description: p.description || ''
+          };
+        });
       } else {
         SITE_DATA.products = SITE_DATA.products.map(p => ({
           ...p,
