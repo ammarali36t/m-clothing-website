@@ -1,0 +1,45 @@
+{
+  "heroEyebrow": "Unstitched Fabrics • Bespoke • Leather",
+  "heroHeadingLine1": "CRAFTED FOR",
+  "heroHeadingLine2": "GENERATIONS.",
+  "heroDescription": "At M., every thread tells a story of patience and precision. Explore mill-direct suiting fabrics, master-tailored silhouettes, and full-grain leather essentials built to age with distinction.",
+  "heroSlides": [
+    {
+      "stepLabel": "01 / Bespoke Atelier",
+      "title": "Bespoke Tailored Charcoal Suiting",
+      "ctaText": "Explore",
+      "targetPage": "suiting",
+      "image": ""
+    },
+    {
+      "stepLabel": "02 / Mill-Direct Weaves",
+      "title": "Fine Unstitched Wool & Egyptian Cotton",
+      "ctaText": "Shop Fabrics",
+      "targetPage": "suiting",
+      "image": ""
+    },
+    {
+      "stepLabel": "03 / Saddle-Stitched Hide",
+      "title": "Handcrafted Full-Grain Heritage Leather",
+      "ctaText": "Shop Leather",
+      "targetPage": "leather",
+      "image": ""
+    },
+    {
+      "stepLabel": "04 / Ceremonial Silhouettes",
+      "title": "Luxury Menswear Atelier Craftsmanship",
+      "ctaText": "All Collections",
+      "targetPage": "collections",
+      "image": ""
+    }
+  ],
+  "ceoMessage": {
+    "eyebrow": "From the Founder’s Desk",
+    "quote": "True luxury never shouts—it is felt in the quiet weight of long-staple cotton, the discipline of a hand-basted lapel, and leather that grows more dignified with every passing decade.",
+    "messageBody": "When we opened the doors of M. in Chakwal, our promise was simple: to bring honest mill-direct textiles, uncompromising bespoke tailoring, and full-grain leathercraft together under one roof. Every piece that bears our needle-and-button mark is inspected personally so that what you wear today becomes an heirloom tomorrow.",
+    "founderName": "Jawad Ali",
+    "roleTitle": "Founder & Chief Executive Officer, M.",
+    "locationNote": "Flagship Atelier — Chakwal",
+    "portraitImage": ""
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "featured": true,
+      "name": "Imperial Giza 86 Egyptian Cotton",
+      "category": "suiting",
+      "pricePKR": 9500,
+      "unit": "4.5m Unstitched Cut",
+      "colors": ["#F4EFE6", "#2C353D", "#C8B89D"],
+      "colorNames": ["Ivory Cream", "Midnight Slate", "Warm Sand"],
+      "options": ["4.5m Cut (Unstitched)", "Custom Stitched (+Rs. 3,500)"],
+      "image": "",
+      "description": "Long-staple Egyptian cotton woven for crisp breathability, luminous sheen, and graceful drape across all seasons."
+    },
+    {
+      "id": 2,
+      "featured": true,
+      "name": "The Heritage Saddle Weekender",
+      "category": "leather",
+      "pricePKR": 28500,
+      "unit": "Full-Grain Cowhide",
+      "colors": ["#6F331E", "#2B211B"],
+      "colorNames": ["Terracotta Cognac", "Espresso Brown"],
+      "options": ["Standard Cabin Size", "Monogrammed Initials"],
+      "image": "",
+      "description": "Hand-cut full-grain leather weekender bag featuring solid antique brass hardware, reinforced rolled handles, and cotton twill lining."
+    },
+    {
+      "id": 3,
+      "featured": true,
+      "name": "Super 130s Merino Wool Suiting",
+      "category": "suiting",
+      "pricePKR": 16800,
+      "unit": "4m Suiting Length",
+      "colors": ["#262930", "#4A3B32", "#595D62"],
+      "colorNames": ["Charcoal Weave", "Roasted Umber", "Ash Herringbone"],
+      "options": ["4m Fabric Only", "Bespoke 2-Piece Suit"],
+      "image": "",
+      "description": "Worsted merino wool with natural wrinkle recovery and refined twill texture—ideal for ceremonial suits and formal coats."
+    },
+    {
+      "id": 4,
+      "featured": true,
+      "name": "Artisanal Jamawar & Raw Silk Waistcoat",
+      "category": "tailored",
+      "pricePKR": 12900,
+      "unit": "Ready-to-Wear / Bespoke",
+      "colors": ["#3B2C24", "#83371E", "#D5C7B2"],
+      "colorNames": ["Deep Bronze", "Rust Terracotta", "Champagne Beige"],
+      "options": ["S", "M", "L", "XL", "Custom Measure"],
+      "image": "",
+      "description": "Structured mandarin-collar waistcoat finished with antique metallic buttons, breathable lining, and hand-piped pockets."
+    },
+    {
+      "id": 5,
+      "featured": false,
+      "name": "Hand-Burnished Dress Belt & Folio Set",
+      "category": "leather",
+      "pricePKR": 8200,
+      "unit": "Vegetable-Tanned Leather",
+      "colors": ["#7B3B24", "#231B16"],
+      "colorNames": ["Saddle Tan", "Onyx Espresso"],
+      "options": ["Waist 32-34", "Waist 36-38", "Waist 40-42"],
+      "image": "",
+      "description": "Paired full-grain leather dress belt with brushed brass buckle and matching slim document & card folio."
+    },
+    {
+      "id": 6,
+      "featured": false,
+      "name": "Royal Boski Finish Wash & Wear",
+      "category": "suiting",
+      "pricePKR": 7800,
+      "unit": "4.5m Unstitched Cut",
+      "colors": ["#F2E6D0", "#3D4849", "#242424"],
+      "colorNames": ["Classic Cream", "Olive Slate", "Jet Black"],
+      "options": ["4.5m Cut (Unstitched)", "Custom Stitched (+Rs. 3,500)"],
+      "image": "",
+      "description": "Silky-soft micro-fiber blend mimicking pure heritage boski with effortless crease resistance and fluid movement."
+    },
+    {
+      "id": 7,
+      "featured": false,
+      "name": "Hand-Stitched Leather Peshawari & Derby",
+      "category": "leather",
+      "pricePKR": 11500,
+      "unit": "Goodyear Welted Sole",
+      "colors": ["#5C2E1E", "#1F1A17"],
+      "colorNames": ["Chestnut Patina", "Classic Black"],
+      "options": ["EU 41 / UK 7", "EU 42 / UK 8", "EU 43 / UK 9", "EU 44 / UK 10"],
+      "image": "",
+      "description": "Supple calfskin upper with cushioned leather footbed and hand-stitched outsole crafted for all-day ceremonial comfort."
+    },
+    {
+      "id": 8,
+      "featured": false,
+      "name": "Tailored Ceremonial Prince Coat",
+      "category": "tailored",
+      "pricePKR": 24500,
+      "unit": "Bespoke / Standard Fit",
+      "colors": ["#2B211B", "#3A433E"],
+      "colorNames": ["Espresso Noir", "Hunter Olive"],
+      "options": ["M", "L", "XL", "Bespoke Measurement"],
+      "image": "",
+      "description": "Sharp architectural shoulders, bespoke gold-trimmed buttons, and hand-basted lapel roll for evening occasions."
+    },
+    {
+      "id": 9,
+      "featured": false,
+      "name": "Executive Leather Briefcase & Laptop Satchel",
+      "category": "leather",
+      "pricePKR": 21000,
+      "unit": "Fits up to 16\" Laptop",
+      "colors": ["#83371E", "#3B2C24"],
+      "colorNames": ["Brick Cognac", "Dark Walnut"],
+      "options": ["Standard Strap", "Personalized Monogram"],
+      "image": "",
+      "description": "Structured everyday leather briefcase with padded laptop compartment, fountain pen loops, and detachable shoulder strap."
+    }
+  ]
+}
