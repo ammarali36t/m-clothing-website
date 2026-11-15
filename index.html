@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M. — Crafting Graceful Creations | Fine Suiting & Heritage Leather</title>
+  <!-- Custom Gold Monogram SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='15' y1='10' x2='105' y2='105' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0%25' stop-color='%23F5D77F'/%3E%3Cstop offset='50%25' stop-color='%23C59B27'/%3E%3Cstop offset='100%25' stop-color='%23E5C158'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='120' height='120' rx='26' fill='%232B211B'/%3E%3Crect x='5' y='5' width='110' height='110' rx='21' fill='none' stroke='url(%23g)' stroke-width='2' stroke-opacity='0.45'/%3E%3Cpath d='M16 86 H36 V83 H30 V46 L54 85 H57 L82 44 V83 H75 V86 H99 V83 H93 V38 H98 V35 H81 L57 73 L33 35 H16 V38 H22 V83 H16 V86 Z' fill='url(%23g)'/%3E%3Cpath d='M89 22 L45 94' stroke='%232B211B' stroke-width='6.5' stroke-linecap='round'/%3E%3Cpath d='M90 21 C92 22 92.5 25 90.5 28 L50 90 L44 97 L47.5 88 L85.5 25 C87 22.2 88.8 20.2 90 21 Z' fill='url(%23g)'/%3E%3Ccircle cx='103' cy='83' r='7.5' fill='url(%23g)'/%3E%3Ccircle cx='101' cy='81' r='1' fill='%232B211B'/%3E%3Ccircle cx='105' cy='81' r='1' fill='%232B211B'/%3E%3Ccircle cx='101' cy='85' r='1' fill='%232B211B'/%3E%3Ccircle cx='105' cy='85' r='1' fill='%232B211B'/%3E%3C/svg%3E" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Cormorant Garamond, Great Vibes, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FAF6F0',
+            cream: '#F3ECE1',
+            sand: '#E6DDD0',
+            terracotta: '#9E472A',
+            brick: '#83371E',
+            espresso: '#2B211B',
+            bronze: '#4A382E',
+            gold: '#C59B27',
+            goldLight: '#DFBE58',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            script: ['"Great Vibes"', 'cursive'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    .brick-pattern {
+      background-color: #8E3D22;
+      background-image: 
+        linear-gradient(335deg, rgba(43, 33, 27, 0.14) 23px, transparent 23px),
+        linear-gradient(155deg, rgba(43, 33, 27, 0.14) 23px, transparent 23px),
+        linear-gradient(335deg, rgba(43, 33, 27, 0.1) 23px, transparent 23px),
+        linear-gradient(155deg, rgba(43, 33, 27, 0.1) 23px, transparent 23px);
+      background-size: 58px 58px;
+      background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAF6F0;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C8B9A6;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #9E472A;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .product-card:hover .product-img {
+      transform: scale(1.05);
+    }
+
+    @keyframes viewFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .page-view-active {
+      animation: viewFadeIn 0.35s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-ivory text-espresso font-sans antialiased selection:bg-terracotta selection:text-ivory overflow-x-hidden pb-16 lg:pb-0">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-espresso text-cream text-[10px] sm:text-xs tracking-[0.14em] sm:tracking-[0.18em] uppercase py-1.5 px-3 sm:px-4 text-center border-b border-gold/20">
+    <span class="hidden sm:inline">Bespoke Tailoring, Unstitched Luxury Fabrics &amp; Handcrafted Leather — Flagship Store &amp; Nationwide Delivery</span>
+    <span class="sm:hidden">Bespoke Tailoring &bull; Fine Suiting &bull; Heritage Leather</span>
+  </div>
+
+  <!-- Sticky Navigation Header -->
+  <header class="sticky top-0 z-40 bg-ivory/95 backdrop-blur-md border-b border-sand transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-14 sm:h-16">
+        
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center lg:hidden">
+          <button id="mobile-menu-btn" aria-label="Open Navigation" class="w-10 h-10 flex items-center justify-center rounded-lg text-espresso hover:bg-cream active:bg-sand transition">
+            <i class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+
+        <!-- Brand Logo -->
+        <button onclick="navigateTo('home')" class="flex items-center group focus:outline-none py-1 text-left" aria-label="M. Home">
+          <div class="h-10 sm:h-12 w-auto aspect-[195/145] transition-transform duration-300 group-hover:scale-[1.03]">
+            <svg viewBox="0 0 195 145" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-full w-full drop-shadow-2xs">
+              <defs>
+                <linearGradient id="mGoldGrad" x1="25" y1="15" x2="175" y2="120" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#D4AF37" />
+                  <stop offset="35%" stop-color="#B0841E" />
+                  <stop offset="70%" stop-color="#E5C158" />
+                  <stop offset="100%" stop-color="#9A7017" />
+                </linearGradient>
+                <linearGradient id="needleGrad" x1="130" y1="20" x2="65" y2="122" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#DFBE58" />
+                  <stop offset="50%" stop-color="#B88B22" />
+                  <stop offset="100%" stop-color="#8C6411" />
+                </linearGradient>
+              </defs>
+              <path d="M26 108 H54 V104 H45 V52 L79 106 H83 L118 50 V104 H108 V108 H142 V104 H133 V42 H141 V38 H117 L83 91 L50 38 H26 V42 H35 V104 H26 V108 Z" fill="url(#mGoldGrad)" />
+              <path d="M128 20 L67 120" stroke="#FAF6F0" stroke-width="8.5" stroke-linecap="round" />
+              <path d="M130 18 C132.5 19.5 133 23.5 130.5 27.5 L74 114 L65 124 L70 111.5 L123.5 23.5 C125.5 19.8 128 17 130 18 Z" fill="url(#needleGrad)" />
+              <ellipse cx="125.2" cy="26.2" rx="1.5" ry="4.2" transform="rotate(32 125.2 26.2)" fill="#FAF6F0" />
+              <path d="M124 24 C115 12, 135 3, 152 12 C169 21, 159 49, 151 70 C144 89, 146 105, 163 106" stroke="url(#mGoldGrad)" stroke-width="2" stroke-linecap="round" fill="none" />
+              <g transform="translate(170, 104)">
+                <circle cx="0" cy="0" r="9" fill="url(#mGoldGrad)" />
+                <circle cx="0" cy="0" r="6.8" stroke="#FAF6F0" stroke-width="0.85" fill="none" opacity="0.7" />
+                <circle cx="-2.2" cy="-2.2" r="1.1" fill="#FAF6F0" />
+                <circle cx="2.2" cy="-2.2" r="1.1" fill="#FAF6F0" />
+                <circle cx="-2.2" cy="2.2" r="1.1" fill="#FAF6F0" />
+                <circle cx="2.2" cy="2.2" r="1.1" fill="#FAF6F0" />
+              </g>
+              <text x="97.5" y="137" text-anchor="middle" fill="#8C6818" font-family="'Great Vibes', cursive" font-size="16.5" letter-spacing="0.3">
+                Crafting Graceful Creations
+              </text>
+            </svg>
+          </div>
+        </button>
+
+        <!-- Desktop Center Links -->
+        <nav class="hidden lg:flex items-center space-x-6 xl:space-x-7 text-[11px] font-medium tracking-[0.15em] uppercase text-espresso">
+          <button onclick="navigateTo('home')" data-nav="home" class="nav-link hover:text-terracotta transition py-1.5 border-b-2 border-terracotta text-terracotta">Home</button>
+          <button onclick="navigateTo('collections')" data-nav="collections" class="nav-link hover:text-terracotta transition py-1.5 border-b-2 border-transparent">Collections</button>
+          <button onclick="navigateTo('suiting')" data-nav="suiting" class="nav-link hover:text-terracotta transition py-1.5 border-b-2 border-transparent">Fine Suiting</button>
+          <button onclick="navigateTo('leather')" data-nav="leather" class="nav-link hover:text-terracotta transition py-1.5 border-b-2 border-transparent">Heritage Leather</button>
+          <button onclick="navigateToSection('bespoke')" class="hover:text-terracotta transition py-1.5 border-b-2 border-transparent">Bespoke Tailoring</button>
+          <button onclick="navigateToSection('story')" class="hover:text-terracotta transition py-1.5 border-b-2 border-transparent">Our Craft</button>
+          <button onclick="navigateTo('contact')" data-nav="contact" class="nav-link hover:text-terracotta transition py-1.5 border-b-2 border-transparent">Contact Us</button>
+        </nav>
+
+        <!-- Right Utility Actions -->
+        <div class="flex items-center space-x-1.5 sm:space-x-3">
+          <button id="currency-toggle" onclick="toggleCurrency()" title="Switch Currency" class="px-2.5 py-1.5 rounded-md border border-sand bg-cream/70 hover:bg-cream text-[11px] font-semibold tracking-wider text-bronze transition">
+            PKR
+          </button>
+
+          <button onclick="toggleSearchBar()" aria-label="Search Products" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-espresso hover:bg-cream hover:text-terracotta transition">
+            <i class="fa-solid fa-magnifying-glass text-sm"></i>
+          </button>
+
+          <button onclick="toggleCart(true)" aria-label="Open Shopping Bag" class="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-espresso hover:bg-cream hover:text-terracotta transition">
+            <i class="fa-solid fa-bag-shopping text-base"></i>
+            <span id="cart-badge" class="absolute -top-0.5 -right-0.5 bg-terracotta text-ivory text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center shadow-sm">
+              0
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Expandable Search Bar -->
+    <div id="search-drawer" class="hidden border-t border-sand bg-cream/95 px-3 sm:px-4 py-3 transition-all">
+      <div class="max-w-3xl mx-auto flex items-center gap-2.5 sm:gap-3">
+        <i class="fa-solid fa-magnifying-glass text-bronze/70 text-sm"></i>
+        <input
+          type="text"
+          id="search-input"
+          oninput="handleSearch(this.value)"
+          placeholder="Search Egyptian cotton, merino wool, weekender bag..."
+          class="w-full bg-transparent text-sm text-espresso placeholder-bronze/60 focus:outline-none"
+        />
+        <button onclick="toggleSearchBar()" class="px-2 py-1 text-xs uppercase tracking-widest text-bronze hover:text-terracotta font-semibold shrink-0">Close</button>
+      </div>
+    </div>
+
+    <!-- Mobile Slide-Down Nav Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-ivory border-t border-sand px-4 py-3 space-y-1 shadow-xl max-h-[calc(100vh-7.5rem)] overflow-y-auto">
+      <button onclick="navigateTo('home'); closeMobileMenu();" data-mobile-nav="home" class="mobile-nav-link flex items-center justify-between w-full text-left px-3 py-3 rounded-lg text-xs uppercase tracking-widest font-semibold text-terracotta bg-cream/80">
+        <span>Home</span>
+        <i class="fa-solid fa-chevron-right text-[10px] opacity-60"></i>
+      </button>
+      <button onclick="navigateTo('collections'); closeMobileMenu();" data-mobile-nav="collections" class="mobile-nav-link flex items-center justify-between w-full text-left px-3 py-3 rounded-lg text-xs uppercase tracking-widest font-medium text-espresso hover:bg-cream/60 hover:text-terracotta">
+        <span>All Collections</span>
+        <i class="fa-solid fa-chevron-right text-[10px] opacity-60"></i>
+      </button>
+      <button onclick="navigateTo('suiting'); closeMobileMenu();" data-mobile-nav="suiting" class="mobile-nav-link flex items-center justify-between w-full text-left px-3 py-3 rounded-lg text-xs uppercase tracking-widest font-medium text-espresso hover:bg-cream/60 hover:text-terracotta">
+        <span>Fine Suiting Fabrics</span>
+        <i class="fa-solid fa-chevron-right text-[10px] opacity-60"></i>
+      </button>
+      <button onclick="navigateTo('leather'); closeMobileMenu();" data-mobile-nav="leather" class="mobile-nav-link flex items-center justify-between w-full text-left px-3 py-3 rounded-lg text-xs uppercase tracking-widest font-medium text-espresso hover:bg-cream/60 hover:text-terracotta">
+        <span>Heritage Leather Goods</span>
+        <i class="fa-solid fa-chevron-right text-[10px] opacity-60"></i>
+      </button>
+      <div class="border-t border-sand/70 my-1.5"></div>
+      <button onclick="navigateToSection('bespoke'); closeMobileMenu();" class="flex items-center justify-between w-full text-left px-3 py-3 rounded-lg text-xs uppercase tracking-widest font-medium text-espresso hover:bg-cream/60 hover:text-terracotta">
+        <span>Bespoke Tailoring</span>
+        <i class="fa-solid fa-scissors text-[11px] text-bronze/70"></i>
+      </button>
+      <button onclick="navigateToSection('story'); closeMobileMenu();" class="flex items-center justify-between w-full text-left px-3 py-3 rounded-lg text-xs uppercase tracking-widest font-medium text-espresso hover:bg-cream/60 hover:text-terracotta">
+        <span>Our Craft &amp; Founder</span>
+        <i class="fa-solid fa-landmark text-[11px] text-bronze/70"></i>
+      </button>
+      <button onclick="navigateTo('contact'); closeMobileMenu();" data-mobile-nav="contact" class="mobile-nav-link flex items-center justify-between w-full text-left px-3 py-3 rounded-lg text-xs uppercase tracking-widest font-medium text-espresso hover:bg-cream/60 hover:text-terracotta">
+        <span>Contact Us &amp; Location</span>
+        <i class="fa-solid fa-location-dot text-[11px] text-terracotta"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- VIEW 1: HOME PAGE (`#page-home`)                                      -->
+  <!-- ===================================================================== -->
+  <main id="page-home" class="page-view page-view-active">
+
+    <!-- Hero Editorial Banner with Interactive Horizontal Image Slider -->
+    <section id="hero-section" onmouseenter="pauseHeroSlider()" onmouseleave="resumeHeroSlider()" class="relative overflow-hidden bg-espresso text-ivory">
+      <div class="absolute inset-0">
+        <img
+          id="hero-ambient-bg"
+          src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1920&q=80"
+          alt="Bespoke tailoring backdrop"
+          onerror="this.style.display='none'"
+          class="w-full h-full object-cover object-center opacity-30 transition-all duration-700 scale-105"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-[#211712]/95 via-[#2B211B]/88 to-[#211712]/80"></div>
+      </div>
+
+      <!-- Desktop Side Slider Arrows -->
+      <button
+        onclick="prevHeroSlide()"
+        aria-label="Previous Showcase Image"
+        class="hidden md:flex absolute left-4 lg:left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-ivory/15 hover:bg-terracotta text-ivory border border-cream/30 backdrop-blur-md items-center justify-center transition-all duration-300 shadow-lg hover:scale-105"
+      >
+        <i class="fa-solid fa-chevron-left text-sm"></i>
+      </button>
+
+      <button
+        onclick="nextHeroSlide()"
+        aria-label="Next Showcase Image"
+        class="hidden md:flex absolute right-4 lg:right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-ivory/15 hover:bg-terracotta text-ivory border border-cream/30 backdrop-blur-md items-center justify-center transition-all duration-300 shadow-lg hover:scale-105"
+      >
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+      </button>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 md:px-16 py-8 sm:py-14 lg:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-7 sm:gap-8 lg:gap-10 items-center">
+          
+          <!-- Left Column: Editorial Headline & CTAs -->
+          <div class="lg:col-span-6 text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-ivory/10 border border-gold/40 backdrop-blur-sm mb-4 sm:mb-5">
+              <span class="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-gold shrink-0"></span>
+              <span class="text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.2em] text-cream font-medium">Unstitched Fabrics &bull; Bespoke &bull; Leather</span>
+            </div>
+
+            <h1 class="font-serif text-3xl sm:text-5xl xl:text-6xl font-semibold tracking-tight leading-[1.08] text-ivory mb-4 sm:mb-5">
+              CRAFTED FOR <br />
+              <span class="italic font-normal text-goldLight">GENERATIONS.</span>
+            </h1>
+
+            <p class="text-xs sm:text-base text-cream/90 font-light leading-relaxed mb-6 sm:mb-7 max-w-lg">
+              At <strong class="font-semibold text-ivory">M.</strong>, every thread tells a story of patience and precision. Explore mill-direct suiting fabrics, master-tailored silhouettes, and full-grain leather essentials built to age with distinction.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-3.5">
+              <button onclick="navigateTo('suiting')" class="w-full sm:w-auto px-6 py-3.5 sm:py-3 rounded-lg bg-[#D6BE96] hover:bg-goldLight text-espresso text-xs font-semibold uppercase tracking-[0.18em] transition shadow-lg text-center">
+                Discover Fine Suiting
+              </button>
+              <button onclick="navigateToSection('bespoke')" class="w-full sm:w-auto px-6 py-3.5 sm:py-3 rounded-lg border border-cream/50 hover:border-ivory hover:bg-ivory/10 text-ivory text-xs font-semibold uppercase tracking-[0.18em] transition text-center">
+                Book Custom Fitting
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Column: Horizontal Touch-Swipeable Sliding Image Frame -->
+          <div class="lg:col-span-6">
+            <div id="hero-slider-container" class="relative rounded-2xl overflow-hidden border border-gold/35 shadow-2xl bg-[#1C1410] select-none">
+              <div id="hero-slider-track" class="flex transition-transform duration-700 ease-out">
+                <!-- Populated dynamically from SITE_DATA.heroSlides -->
+              </div>
+
+              <!-- Slide Indicator Dots, Mobile Controls & Counter Bar -->
+              <div class="bg-[#1A120E] px-3.5 sm:px-5 py-2.5 border-t border-gold/20 flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2" id="hero-dots"></div>
+                <div class="flex items-center gap-2.5">
+                  <span id="hero-slide-counter" class="text-[11px] tracking-widest text-cream/70 font-medium">1 / 4</span>
+                  <div class="flex md:hidden items-center gap-1.5">
+                    <button onclick="prevHeroSlide()" aria-label="Previous Slide" class="w-7 h-7 rounded-full bg-ivory/10 active:bg-terracotta text-ivory flex items-center justify-center border border-cream/20">
+                      <i class="fa-solid fa-chevron-left text-[10px]"></i>
+                    </button>
+                    <button onclick="nextHeroSlide()" aria-label="Next Slide" class="w-7 h-7 rounded-full bg-ivory/10 active:bg-terracotta text-ivory flex items-center justify-center border border-cream/20">
+                      <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Department Gateway Cards -->
+    <section class="brick-pattern py-12 sm:py-16 px-4 sm:px-6 lg:px-8 border-y border-gold/25">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
+          <span class="text-[11px] uppercase tracking-[0.22em] text-goldLight font-semibold">Explore Our Houses</span>
+          <h2 class="font-serif text-2xl sm:text-4xl font-semibold text-ivory mt-1">Three Pillars of Sartorial Craft</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
+          <div onclick="navigateTo('collections')" class="cursor-pointer group bg-ivory/95 hover:bg-ivory rounded-2xl p-6 sm:p-7 shadow-xl border border-gold/30 transition-all duration-300 md:hover:-translate-y-1 flex flex-col justify-between">
+            <div>
+              <div class="w-11 h-11 rounded-xl bg-espresso text-goldLight flex items-center justify-center mb-4">
+                <i class="fa-solid fa-layer-group text-base"></i>
+              </div>
+              <span class="text-[10px] uppercase tracking-[0.2em] text-terracotta font-semibold">Complete Archive</span>
+              <h3 class="font-serif text-2xl font-semibold text-espresso mt-1 mb-2">All Collections</h3>
+              <p class="text-xs sm:text-sm text-bronze leading-relaxed mb-5">
+                Browse the complete seasonal catalog spanning mill-direct fabrics, bespoke waistcoats, and handcrafted leather essentials.
+              </p>
+            </div>
+            <span class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-brick group-hover:text-espresso transition">
+              Enter Collections Page <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </span>
+          </div>
+
+          <div onclick="navigateTo('suiting')" class="cursor-pointer group bg-ivory/95 hover:bg-ivory rounded-2xl p-6 sm:p-7 shadow-xl border border-gold/30 transition-all duration-300 md:hover:-translate-y-1 flex flex-col justify-between">
+            <div>
+              <div class="w-11 h-11 rounded-xl bg-espresso text-goldLight flex items-center justify-center mb-4">
+                <i class="fa-solid fa-scroll text-base"></i>
+              </div>
+              <span class="text-[10px] uppercase tracking-[0.2em] text-terracotta font-semibold">Unstitched &amp; Worsted</span>
+              <h3 class="font-serif text-2xl font-semibold text-espresso mt-1 mb-2">Fine Suiting</h3>
+              <p class="text-xs sm:text-sm text-bronze leading-relaxed mb-5">
+                Imperial Giza 86 Egyptian cotton, Super 130s merino wool, and royal boski weaves in generous 4m–4.5m cuts.
+              </p>
+            </div>
+            <span class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-brick group-hover:text-espresso transition">
+              Enter Fine Suiting Page <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </span>
+          </div>
+
+          <div onclick="navigateTo('leather')" class="cursor-pointer group bg-ivory/95 hover:bg-ivory rounded-2xl p-6 sm:p-7 shadow-xl border border-gold/30 transition-all duration-300 md:hover:-translate-y-1 flex flex-col justify-between">
+            <div>
+              <div class="w-11 h-11 rounded-xl bg-espresso text-goldLight flex items-center justify-center mb-4">
+                <i class="fa-solid fa-briefcase text-base"></i>
+              </div>
+              <span class="text-[10px] uppercase tracking-[0.2em] text-terracotta font-semibold">Vegetable-Tanned Hide</span>
+              <h3 class="font-serif text-2xl font-semibold text-espresso mt-1 mb-2">Heritage Leather</h3>
+              <p class="text-xs sm:text-sm text-bronze leading-relaxed mb-5">
+                Saddle-stitched weekenders, executive briefcases, dress belts, and Goodyear-welted leather footwear.
+              </p>
+            </div>
+            <span class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-brick group-hover:text-espresso transition">
+              Enter Heritage Leather Page <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Curated Pieces on Home -->
+    <section id="home-featured" class="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 sm:mb-10">
+        <div>
+          <span class="text-xs uppercase tracking-[0.22em] text-terracotta font-semibold">Curated Highlights</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-semibold text-espresso mt-1">Signature Creations</h2>
+        </div>
+        <button onclick="navigateTo('collections')" class="self-start md:self-auto px-5 py-2.5 rounded-lg border border-espresso text-espresso hover:bg-espresso hover:text-ivory text-xs uppercase tracking-[0.18em] font-semibold transition">
+          View Full Catalog &rarr;
+        </button>
+      </div>
+
+      <div id="home-featured-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+        <!-- Populated dynamically -->
+      </div>
+    </section>
+
+    <!-- Bespoke Tailoring & Custom Measurement Booking Section -->
+    <section id="bespoke" class="bg-cream border-y border-sand py-14 sm:py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
+        
+        <div class="lg:col-span-5 space-y-5 sm:space-y-6">
+          <div class="inline-block px-3 py-1 rounded bg-terracotta/10 text-terracotta text-xs uppercase tracking-[0.2em] font-semibold">
+            Master Atelier Service
+          </div>
+          <h2 class="font-serif text-3xl sm:text-5xl font-semibold text-espresso leading-tight">
+            Tailored to Your Exact Posture &amp; Measure.
+          </h2>
+          <p class="text-bronze leading-relaxed text-sm sm:text-base">
+            Select any unstitched fabric from our collection and let our master cutters craft a custom Shalwar Kameez, Waistcoat, or Two-Piece Suit. Visit our flagship studio or submit your measurements online.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3.5 sm:gap-4">
+              <div class="w-10 h-10 rounded-lg bg-ivory border border-sand flex items-center justify-center text-terracotta shrink-0">
+                <i class="fa-solid fa-ruler-combined"></i>
+              </div>
+              <div>
+                <h4 class="font-serif text-lg font-semibold text-espresso">32-Point Anatomical Fitting</h4>
+                <p class="text-xs sm:text-sm text-bronze">Individual paper patterns archived under your client profile for effortless future orders.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5 sm:gap-4">
+              <div class="w-10 h-10 rounded-lg bg-ivory border border-sand flex items-center justify-center text-terracotta shrink-0">
+                <i class="fa-solid fa-scissors"></i>
+              </div>
+              <div>
+                <h4 class="font-serif text-lg font-semibold text-espresso">Hand-Finished Canvas &amp; Buttons</h4>
+                <p class="text-xs sm:text-sm text-bronze">Horn buttons, breathable Bemberg linings, and reinforced collar fusing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="bg-ivory rounded-2xl p-5 sm:p-10 shadow-xl border border-sand">
+            <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-espresso mb-2">Reserve a Bespoke Consultation</h3>
+            <p class="text-xs sm:text-sm text-bronze mb-6">Schedule an in-store fitting at M. or request an online master-tailor call.</p>
+
+            <form id="bespoke-form" onsubmit="submitBespokeForm(event)" class="space-y-4 sm:space-y-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs uppercase tracking-wider text-bronze font-semibold mb-1.5">Full Name *</label>
+                  <input type="text" required placeholder="e.g. Tariq Mahmood" class="w-full px-3.5 sm:px-4 py-3 rounded-lg bg-cream/60 border border-sand text-sm text-espresso focus:outline-none focus:border-terracotta" />
+                </div>
+                <div>
+                  <label class="block text-xs uppercase tracking-wider text-bronze font-semibold mb-1.5">Phone / WhatsApp *</label>
+                  <input type="tel" required placeholder="+92 300 0000000" class="w-full px-3.5 sm:px-4 py-3 rounded-lg bg-cream/60 border border-sand text-sm text-espresso focus:outline-none focus:border-terracotta" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs uppercase tracking-wider text-bronze font-semibold mb-1.5">Consultation Type</label>
+                  <select class="w-full px-3.5 sm:px-4 py-3 rounded-lg bg-cream/60 border border-sand text-sm text-espresso focus:outline-none focus:border-terracotta">
+                    <option>In-Store Flagship Fitting (Chakwal)</option>
+                    <option>Online Custom Tailoring (Send Measurements)</option>
+                    <option>Wedding &amp; Ceremonial Wardrobe</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs uppercase tracking-wider text-bronze font-semibold mb-1.5">Garment Interest</label>
+                  <select class="w-full px-3.5 sm:px-4 py-3 rounded-lg bg-cream/60 border border-sand text-sm text-espresso focus:outline-none focus:border-terracotta">
+                    <option>Unstitched Suiting + Custom Stitching</option>
+                    <option>Bespoke Waistcoat / Prince Coat</option>
+                    <option>Two-Piece / Three-Piece Suit</option>
+                    <option>Custom Leather Bag / Footwear</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-bronze font-semibold mb-1.5">Preferred Date or Measurement Notes</label>
+                <textarea rows="2" placeholder="Share preferred visit time or collar/chest notes..." class="w-full px-3.5 sm:px-4 py-3 rounded-lg bg-cream/60 border border-sand text-sm text-espresso focus:outline-none focus:border-terracotta"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 rounded-lg bg-brick hover:bg-espresso text-ivory text-xs uppercase tracking-[0.2em] font-semibold transition shadow-md">
+                Confirm Tailoring Appointment
+              </button>
+            </form>
+
+            <div id="bespoke-success" class="hidden mt-5 p-4 rounded-xl bg-emerald-950/10 border border-emerald-800/30 text-espresso flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-emerald-700 text-lg mt-0.5"></i>
+              <div>
+                <p class="font-semibold text-sm">Consultation Request Received</p>
+                <p class="text-xs text-bronze mt-0.5">Our master tailor at <strong>M.</strong> will contact you shortly on WhatsApp/phone to confirm your slot.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Story & Flagship Architecture Section -->
+    <section id="story" class="pt-14 sm:pt-20 pb-10 sm:pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border border-sand bg-espresso">
+            <img
+              src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=80"
+              alt="M. Bespoke Craftsmanship"
+              onerror="this.src='https://placehold.co/1000x750/2B211B/FAF6F0?text=M.+Flagship+Atelier'"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="mt-4 sm:mt-0 sm:absolute sm:-bottom-6 sm:-right-6 bg-espresso text-ivory p-5 sm:p-6 rounded-xl shadow-2xl border border-gold/40 sm:max-w-xs">
+            <p class="font-script text-2xl text-goldLight mb-1">Crafting Graceful Creations</p>
+            <p class="text-xs text-cream/80 leading-relaxed">
+              Rooted in architectural warmth—exposed brick, fine textiles, and saddle-stitched leather under one roof.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-y-4 sm:space-y-5 lg:pl-6 pt-2 sm:pt-4 lg:pt-0">
+          <span class="text-xs uppercase tracking-[0.22em] text-terracotta font-semibold">Our Heritage</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-semibold text-espresso leading-tight">
+            Where Fine Fabric Meets Full-Grain Leather.
+          </h2>
+          <p class="text-bronze leading-relaxed text-sm sm:text-base">
+            Born from an appreciation for enduring menswear, <strong>M.</strong> brings together two timeless disciplines under one roof: luxury unstitched suiting fabrics and artisanal leathercraft.
+          </p>
+          <p class="text-bronze leading-relaxed text-sm sm:text-base">
+            Every bolt of fabric is inspected for thread density and breathability, while every leather hide is vegetable-tanned and hand-burnished to develop a rich patina over years of wear.
+          </p>
+
+          <div class="grid grid-cols-3 gap-3 sm:gap-4 pt-4 border-t border-sand">
+            <div>
+              <p class="font-serif text-xl sm:text-3xl font-bold text-terracotta">100%</p>
+              <p class="text-[10px] sm:text-xs text-bronze uppercase tracking-wider mt-1">Natural Fibers &amp; Hides</p>
+            </div>
+            <div>
+              <p class="font-serif text-xl sm:text-3xl font-bold text-terracotta">4.5m</p>
+              <p class="text-[10px] sm:text-xs text-bronze uppercase tracking-wider mt-1">Generous Suit Cuts</p>
+            </div>
+            <div>
+              <p class="font-serif text-xl sm:text-3xl font-bold text-terracotta">Bespoke</p>
+              <p class="text-[10px] sm:text-xs text-bronze uppercase tracking-wider mt-1">In-House Stitching</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- FOUNDER & CEO MESSAGE CARD (BOTTOM OF HOME PAGE)                    -->
+    <!-- =================================================================== -->
+    <section id="ceo-message-section" class="pt-4 sm:pt-6 pb-14 sm:pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div id="ceo-card-container" class="bg-cream rounded-2xl sm:rounded-3xl border border-gold/40 shadow-xl overflow-hidden">
+        <!-- Populated dynamically from SITE_DATA.ceoMessage -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- VIEW 2: COLLECTIONS PAGE (`#page-collections`)                        -->
+  <!-- ===================================================================== -->
+  <section id="page-collections" class="page-view hidden">
+    <div class="bg-espresso text-ivory py-12 sm:py-20 px-4 sm:px-6 lg:px-8 border-b border-gold/25">
+      <div class="max-w-7xl mx-auto">
+        <nav class="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-cream/60 mb-3 sm:mb-4">
+          <button onclick="navigateTo('home')" class="hover:text-goldLight transition">Home</button>
+          <span>/</span>
+          <span class="text-goldLight">All Collections</span>
+        </nav>
+        <div class="max-w-3xl">
+          <span class="inline-block px-3 py-1 rounded-full bg-ivory/10 border border-gold/30 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-goldLight mb-3 sm:mb-4">
+            Complete House Archive
+          </span>
+          <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-semibold leading-tight mb-3 sm:mb-4">
+            The M. Sartorial Archive
+          </h1>
+          <p class="text-xs sm:text-base text-cream/85 font-light leading-relaxed">
+            Explore every unstitched luxury weave, bespoke ceremonial silhouette, and full-grain leather piece crafted under the M. atelier mark.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 pb-6 sm:pb-8 border-b border-sand mb-8 sm:mb-10">
+        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 -mx-4 px-4 sm:mx-0 sm:px-0">
+          <button onclick="setCollectionsSubFilter('all')" data-col-filter="all" class="col-filter-btn shrink-0 px-4 py-2 rounded-lg text-xs uppercase tracking-widest font-semibold bg-espresso text-ivory transition">
+            All Pieces
+          </button>
+          <button onclick="setCollectionsSubFilter('suiting')" data-col-filter="suiting" class="col-filter-btn shrink-0 px-4 py-2 rounded-lg text-xs uppercase tracking-widest font-semibold bg-cream text-bronze hover:bg-sand transition">
+            Fine Suiting
+          </button>
+          <button onclick="setCollectionsSubFilter('leather')" data-col-filter="leather" class="col-filter-btn shrink-0 px-4 py-2 rounded-lg text-xs uppercase tracking-widest font-semibold bg-cream text-bronze hover:bg-sand transition">
+            Heritage Leather
+          </button>
+          <button onclick="setCollectionsSubFilter('tailored')" data-col-filter="tailored" class="col-filter-btn shrink-0 px-4 py-2 rounded-lg text-xs uppercase tracking-widest font-semibold bg-cream text-bronze hover:bg-sand transition">
+            Tailored Essentials
+          </button>
+        </div>
+        <p id="collections-count" class="text-xs uppercase tracking-widest text-bronze font-medium"></p>
+      </div>
+
+      <div id="collections-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"></div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- VIEW 3: FINE SUITING PAGE (`#page-suiting`)                           -->
+  <!-- ===================================================================== -->
+  <section id="page-suiting" class="page-view hidden">
+    <div class="relative overflow-hidden bg-espresso text-ivory py-12 sm:py-20 px-4 sm:px-6 lg:px-8 border-b border-gold/30">
+      <div class="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1920&q=80"
+          alt="Fine Suiting Fabrics"
+          onerror="this.style.display='none'"
+          class="w-full h-full object-cover opacity-25"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-[#211712]/95 via-[#2B211B]/85 to-[#211712]/75"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto">
+        <nav class="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-cream/60 mb-3 sm:mb-4">
+          <button onclick="navigateTo('home')" class="hover:text-goldLight transition">Home</button>
+          <span>/</span>
+          <button onclick="navigateTo('collections')" class="hover:text-goldLight transition">Collections</button>
+          <span>/</span>
+          <span class="text-goldLight">Fine Suiting</span>
+        </nav>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-end">
+          <div class="lg:col-span-8">
+            <span class="inline-block px-3 py-1 rounded-full bg-gold/20 border border-gold/40 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-goldLight mb-3 sm:mb-4">
+              Mill-Direct Luxury Textiles
+            </span>
+            <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-semibold leading-tight mb-3 sm:mb-4">
+              Fine Suiting &amp; Unstitched Weaves
+            </h1>
+            <p class="text-xs sm:text-base text-cream/90 font-light leading-relaxed max-w-2xl">
+              From breathable long-staple Giza 86 Egyptian cotton to worsted Super 130s merino wool and luminous boski blends—offered in generous 4m and 4.5m cuts or custom-stitched by our master tailors.
+            </p>
+          </div>
+          <div class="lg:col-span-4 flex lg:justify-end">
+            <button onclick="navigateToSection('bespoke')" class="w-full sm:w-auto px-6 py-3 rounded-lg bg-[#D6BE96] hover:bg-goldLight text-espresso text-xs font-semibold uppercase tracking-[0.18em] transition shadow-lg">
+              Request Custom Stitching
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-cream border-b border-sand py-5 sm:py-6 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 text-xs">
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-feather-pointed text-terracotta text-base shrink-0"></i>
+          <div>
+            <p class="font-semibold text-espresso uppercase tracking-wider">Long-Staple Natural Yarns</p>
+            <p class="text-bronze">Combed Egyptian cotton &amp; pure Australian merino wool</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-ruler-horizontal text-terracotta text-base shrink-0"></i>
+          <div>
+            <p class="font-semibold text-espresso uppercase tracking-wider">Generous 4m – 4.5m Cuts</p>
+            <p class="text-bronze">Ample yardage for tall silhouettes &amp; matching waistcoats</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-scissors text-terracotta text-base shrink-0"></i>
+          <div>
+            <p class="font-semibold text-espresso uppercase tracking-wider">Optional Bespoke Tailoring</p>
+            <p class="text-bronze">Order unstitched or custom-tailored to your measurements</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+      <div class="flex items-center justify-between mb-6 sm:mb-8">
+        <h2 class="font-serif text-2xl sm:text-3xl font-semibold text-espresso">Available Suiting Fabrics</h2>
+        <span id="suiting-count" class="text-xs uppercase tracking-widest text-bronze font-semibold"></span>
+      </div>
+      <div id="suiting-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"></div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- VIEW 4: HERITAGE LEATHER PAGE (`#page-leather`)                       -->
+  <!-- ===================================================================== -->
+  <section id="page-leather" class="page-view hidden">
+    <div class="relative overflow-hidden bg-espresso text-ivory py-12 sm:py-20 px-4 sm:px-6 lg:px-8 border-b border-gold/30">
+      <div class="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1920&q=80"
+          alt="Heritage Leather Craft"
+          onerror="this.style.display='none'"
+          class="w-full h-full object-cover opacity-25"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-[#211712]/95 via-[#2B211B]/85 to-[#211712]/75"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto">
+        <nav class="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-cream/60 mb-3 sm:mb-4">
+          <button onclick="navigateTo('home')" class="hover:text-goldLight transition">Home</button>
+          <span>/</span>
+          <button onclick="navigateTo('collections')" class="hover:text-goldLight transition">Collections</button>
+          <span>/</span>
+          <span class="text-goldLight">Heritage Leather</span>
+        </nav>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-end">
+          <div class="lg:col-span-8">
+            <span class="inline-block px-3 py-1 rounded-full bg-terracotta/30 border border-gold/40 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-goldLight mb-3 sm:mb-4">
+              Full-Grain Vegetable-Tanned Hide
+            </span>
+            <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-semibold leading-tight mb-3 sm:mb-4">
+              Heritage Leather Goods
+            </h1>
+            <p class="text-xs sm:text-base text-cream/90 font-light leading-relaxed max-w-2xl">
+              Cut from select full-grain cowhide and calfskin, hand-burnished along every edge, and fitted with solid antique brass hardware designed to develop a deeper patina each year.
+            </p>
+          </div>
+          <div class="lg:col-span-4 flex lg:justify-end">
+            <button onclick="navigateToSection('bespoke')" class="w-full sm:w-auto px-6 py-3 rounded-lg bg-[#D6BE96] hover:bg-goldLight text-espresso text-xs font-semibold uppercase tracking-[0.18em] transition shadow-lg">
+              Request Monogramming
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-cream border-b border-sand py-5 sm:py-6 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 text-xs">
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-shield-halved text-terracotta text-base shrink-0"></i>
+          <div>
+            <p class="font-semibold text-espresso uppercase tracking-wider">100% Full-Grain Hides</p>
+            <p class="text-bronze">Unaltered top grain that strengthens &amp; patinates with age</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-award text-terracotta text-base shrink-0"></i>
+          <div>
+            <p class="font-semibold text-espresso uppercase tracking-wider">Solid Brass Hardware</p>
+            <p class="text-bronze">Corrosion-resistant buckles, rivets &amp; YKK brass zippers</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-pen-nib text-terracotta text-base shrink-0"></i>
+          <div>
+            <p class="font-semibold text-espresso uppercase tracking-wider">Bespoke Monogramming</p>
+            <p class="text-bronze">Complimentary blind-debossed initials on bags &amp; folios</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+      <div class="flex items-center justify-between mb-6 sm:mb-8">
+        <h2 class="font-serif text-2xl sm:text-3xl font-semibold text-espresso">Handcrafted Leather Pieces</h2>
+        <span id="leather-count" class="text-xs uppercase tracking-widest text-bronze font-semibold"></span>
+      </div>
+      <div id="leather-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"></div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- VIEW 5: CONTACT US PAGE (`#page-contact`)                             -->
+  <!-- ===================================================================== -->
+  <section id="page-contact" class="page-view hidden">
+    <div class="bg-espresso text-ivory py-12 sm:py-20 px-4 sm:px-6 lg:px-8 border-b border-gold/25">
+      <div class="max-w-7xl mx-auto">
+        <nav class="flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-cream/60 mb-3 sm:mb-4">
+          <button onclick="navigateTo('home')" class="hover:text-goldLight transition">Home</button>
+          <span>/</span>
+          <span class="text-goldLight">Contact Us</span>
+        </nav>
+        <div class="max-w-3xl">
+          <span class="inline-block px-3 py-1 rounded-full bg-ivory/10 border border-gold/30 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-goldLight mb-3 sm:mb-4">
+            Client Concierge &amp; Flagship Boutique
+          </span>
+          <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-semibold leading-tight mb-3 sm:mb-4">
+            Visit Our Atelier or Write to Us
+          </h1>
+          <p class="text-xs sm:text-base text-cream/85 font-light leading-relaxed">
+            Whether you are inquiring about wholesale suiting bolts, custom wedding wardrobes, monogrammed leather gifts, or nationwide delivery, our concierge team is ready to assist.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-start">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <div class="bg-cream rounded-2xl p-6 sm:p-8 border border-sand shadow-lg space-y-6">
+            <div>
+              <span class="text-[11px] uppercase tracking-[0.2em] text-terracotta font-semibold">Flagship Studio</span>
+              <h2 class="font-serif text-2xl sm:text-3xl font-semibold text-espresso mt-1">M. — Chakwal Boutique</h2>
+            </div>
+
+            <div class="space-y-4 text-sm">
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-lg bg-ivory border border-sand flex items-center justify-center text-terracotta shrink-0">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-espresso text-xs uppercase tracking-wider">Boutique Address</p>
+                  <a href="https://maps.app.goo.gl/YsAfsfZrYFQtzKxn8" target="_blank" rel="noopener noreferrer" class="text-bronze hover:text-terracotta underline-offset-4 hover:underline mt-0.5 block">
+                    Talagang Hwy, near Bachat Mall, Chakwal, 48800, Punjab, Pakistan
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-lg bg-ivory border border-sand flex items-center justify-center text-terracotta shrink-0">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-espresso text-xs uppercase tracking-wider">Telephone &amp; WhatsApp</p>
+                  <a href="tel:+923145656060" class="text-bronze hover:text-terracotta mt-0.5 block font-medium">0314 5656060</a>
+                  <p class="text-xs text-bronze/80 mt-0.5">Direct WhatsApp concierge available during studio hours</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-lg bg-ivory border border-sand flex items-center justify-center text-terracotta shrink-0">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-espresso text-xs uppercase tracking-wider">Client Inquiries</p>
+                  <p class="text-bronze mt-0.5">concierge@m-creations.pk</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-lg bg-ivory border border-sand flex items-center justify-center text-terracotta shrink-0">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-espresso text-xs uppercase tracking-wider">Atelier Hours</p>
+                  <p class="text-bronze mt-0.5">Monday – Sunday: 10:00 AM – 10:00 PM</p>
+                  <p class="text-xs text-bronze/80 mt-0.5">Open 7 days a week</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-sand flex flex-wrap gap-3">
+              <a href="https://maps.app.goo.gl/YsAfsfZrYFQtzKxn8" target="_blank" rel="noopener noreferrer" class="flex-1 min-w-[140px] py-2.5 px-4 rounded-lg bg-espresso hover:bg-terracotta text-ivory text-xs uppercase tracking-widest font-semibold text-center transition">
+                <i class="fa-solid fa-diamond-turn-right mr-1.5"></i> Open in Maps
+              </a>
+              <button onclick="navigateToSection('bespoke')" class="flex-1 min-w-[140px] py-2.5 px-4 rounded-lg border border-espresso text-espresso hover:bg-espresso hover:text-ivory text-xs uppercase tracking-widest font-semibold text-center transition">
+                <i class="fa-solid fa-scissors mr-1.5"></i> Book Fitting
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="bg-cream rounded-2xl p-6 sm:p-10 border border-sand shadow-xl">
+            <span class="text-[11px] uppercase tracking-[0.2em] text-terracotta font-semibold">Direct Correspondence</span>
+            <h2 class="font-serif text-2xl sm:text-4xl font-semibold text-espresso mt-1 mb-2">Send Us a Message</h2>
+            <p class="text-xs sm:text-sm text-bronze mb-6">Have a question about fabric weight, leather customization, or an existing order? Our team responds within 24 hours.</p>
+
+            <form id="contact-form" onsubmit="submitContactForm(event)" class="space-y-4 sm:space-y-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs uppercase tracking-wider text-bronze font-semibold mb-1.5">Your Name *</label>
+                  <input type="text" required placeholder="e.g. Usman Tariq" class="w-full px-4 py-3 rounded-lg bg-ivory border border-sand text-sm text-espresso focus:outline-none focus:border-terracotta" />
+                </div>
+                <div>
+                  <label class="block text-xs uppercase tracking-wider text-bronze font-semibold mb-1.5">Email Address *</label>
+                  <input type="email" required placeholder="name@example.com" class="w-full px-4 py-3 rounded-lg bg-ivory border border-sand text-sm text-espresso focus:outline-none focus:border-terracotta" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs uppercase tracking-wider text-bronze font-semibold mb-1.5">Phone / WhatsApp</label>
+                  <input type="tel" placeholder="+92 300 0000000" class="w-full px-4 py-3 rounded-lg bg-ivory border border-sand text-sm text-espresso focus:outline-none focus:border-terracotta" />
+                </div>
+                <div>
+                  <label class="block text-xs uppercase tracking-wider text-bronze font-semibold mb-1.5">Subject</label>
+                  <select class="w-full px-4 py-3 rounded-lg bg-ivory border border-sand text-sm text-espresso focus:outline-none focus:border-terracotta">
+                    <option>Fine Suiting &amp; Fabric Inquiry</option>
+                    <option>Heritage Leather &amp; Monogramming</option>
+                    <option>Bespoke Tailoring &amp; Measurements</option>
+                    <option>Order Status &amp; Delivery</option>
+                    <option>Corporate / Gifting Orders</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs uppercase tracking-wider text-bronze font-semibold mb-1.5">Message *</label>
+                <textarea rows="4" required placeholder="Write your message, fabric reference, or inquiry details..." class="w-full px-4 py-3 rounded-lg bg-ivory border border-sand text-sm text-espresso focus:outline-none focus:border-terracotta"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 rounded-lg bg-brick hover:bg-espresso text-ivory text-xs uppercase tracking-[0.2em] font-semibold transition shadow-md">
+                Send Inquiry to M.
+              </button>
+            </form>
+
+            <div id="contact-success" class="hidden mt-5 p-4 rounded-xl bg-emerald-950/10 border border-emerald-800/30 text-espresso flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-emerald-700 text-lg mt-0.5"></i>
+              <div>
+                <p class="font-semibold text-sm">Message Sent Successfully</p>
+                <p class="text-xs text-bronze mt-0.5">Thank you for reaching out to <strong>M.</strong> Our concierge team will respond shortly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- FOOTER (4-COLUMN LAYOUT WITH LOCATION, COLLECTIONS & CONTACT LINKS)    -->
+  <!-- ===================================================================== -->
+  <footer class="bg-espresso text-cream pt-12 sm:pt-16 pb-10 px-4 sm:px-6 lg:px-8 border-t border-gold/20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 pb-10 sm:pb-12 border-b border-cream/15">
+      
+      <!-- Column 1: Brand Emblem & Tagline -->
+      <div class="space-y-4">
+        <button onclick="navigateTo('home')" class="h-14 w-auto aspect-[195/145] block text-left">
+          <svg viewBox="0 0 195 145" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-full w-full">
+            <defs>
+              <linearGradient id="footerGoldGrad" x1="25" y1="15" x2="175" y2="120" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#F5D77F" />
+                <stop offset="50%" stop-color="#C59B27" />
+                <stop offset="100%" stop-color="#E5C158" />
+              </linearGradient>
+            </defs>
+            <path d="M26 108 H54 V104 H45 V52 L79 106 H83 L118 50 V104 H108 V108 H142 V104 H133 V42 H141 V38 H117 L83 91 L50 38 H26 V42 H35 V104 H26 V108 Z" fill="url(#footerGoldGrad)" />
+            <path d="M128 20 L67 120" stroke="#2B211B" stroke-width="8.5" stroke-linecap="round" />
+            <path d="M130 18 C132.5 19.5 133 23.5 130.5 27.5 L74 114 L65 124 L70 111.5 L123.5 23.5 C125.5 19.8 128 17 130 18 Z" fill="url(#footerGoldGrad)" />
+            <ellipse cx="125.2" cy="26.2" rx="1.5" ry="4.2" transform="rotate(32 125.2 26.2)" fill="#2B211B" />
+            <path d="M124 24 C115 12, 135 3, 152 12 C169 21, 159 49, 151 70 C144 89, 146 105, 163 106" stroke="url(#footerGoldGrad)" stroke-width="2" stroke-linecap="round" fill="none" />
+            <g transform="translate(170, 104)">
+              <circle cx="0" cy="0" r="9" fill="url(#footerGoldGrad)" />
+              <circle cx="-2.2" cy="-2.2" r="1.1" fill="#2B211B" />
+              <circle cx="2.2" cy="-2.2" r="1.1" fill="#2B211B" />
+              <circle cx="-2.2" cy="2.2" r="1.1" fill="#2B211B" />
+              <circle cx="2.2" cy="2.2" r="1.1" fill="#2B211B" />
+            </g>
+            <text x="97.5" y="137" text-anchor="middle" fill="#DFBE58" font-family="'Great Vibes', cursive" font-size="16.5" letter-spacing="0.3">
+              Crafting Graceful Creations
+            </text>
+          </svg>
+        </button>
+        <p class="text-xs text-cream/75 leading-relaxed">
+          Fine suiting fabrics, bespoke menswear tailoring, and handcrafted full-grain leather goods.
+        </p>
+      </div>
+
+      <!-- Column 2: Collections & Pages -->
+      <div>
+        <h4 class="font-serif text-lg font-semibold text-ivory mb-4">Collections</h4>
+        <ul class="space-y-2.5 text-xs text-cream/80 tracking-wider uppercase">
+          <li><button onclick="navigateTo('collections')" class="hover:text-goldLight transition text-left">All Collections</button></li>
+          <li><button onclick="navigateTo('suiting')" class="hover:text-goldLight transition text-left">Fine Suiting Fabrics</button></li>
+          <li><button onclick="navigateTo('leather')" class="hover:text-goldLight transition text-left">Heritage Leather Goods</button></li>
+          <li><button onclick="navigateToSection('bespoke')" class="hover:text-goldLight transition text-left">Bespoke Tailoring</button></li>
+          <li><button onclick="navigateTo('contact')" class="hover:text-goldLight transition text-left">Contact Us</button></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Flagship Store Location & Contact -->
+      <div>
+        <h4 class="font-serif text-lg font-semibold text-ivory mb-4">Flagship Store</h4>
+        <ul class="space-y-2.5 text-xs text-cream/80 leading-relaxed">
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-location-dot text-goldLight mt-1 shrink-0"></i>
+            <a href="https://maps.app.goo.gl/YsAfsfZrYFQtzKxn8" target="_blank" rel="noopener noreferrer" class="hover:text-goldLight transition">
+              Talagang Hwy, near Bachat Mall, Chakwal, 48800, Punjab, Pakistan
+            </a>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <i class="fa-solid fa-clock text-goldLight shrink-0"></i>
+            <span>Mon – Sun: 10:00 AM – 10:00 PM</span>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <i class="fa-solid fa-phone text-goldLight shrink-0"></i>
+            <a href="tel:+923145656060" class="hover:text-goldLight transition">0314 5656060</a>
+          </li>
+          <li class="pt-1 flex items-center gap-4">
+            <a href="https://maps.app.goo.gl/YsAfsfZrYFQtzKxn8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-goldLight hover:underline uppercase tracking-widest font-semibold text-[11px]">
+              <i class="fa-solid fa-diamond-turn-right"></i> Google Maps
+            </a>
+            <button onclick="navigateTo('contact')" class="inline-flex items-center gap-1.5 text-cream/90 hover:text-goldLight hover:underline uppercase tracking-widest font-semibold text-[11px]">
+              Contact Us &rarr;
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Private Trunk Shows Newsletter -->
+      <div>
+        <h4 class="font-serif text-lg font-semibold text-ivory mb-4">Private Trunk Shows</h4>
+        <p class="text-xs text-cream/75 leading-relaxed mb-4">
+          Receive early access to seasonal fabric arrivals and limited-run leather releases.
+        </p>
+        <form onsubmit="subscribeNewsletter(event)" class="flex gap-2">
+          <input type="email" required placeholder="Your email address" class="w-full min-w-0 px-3.5 py-2.5 rounded-lg bg-ivory/10 border border-cream/20 text-xs text-ivory placeholder-cream/50 focus:outline-none focus:border-goldLight" />
+          <button type="submit" class="px-4 py-2.5 rounded-lg bg-terracotta hover:bg-gold text-ivory hover:text-espresso text-xs font-semibold uppercase tracking-wider transition shrink-0">
+            Join
+          </button>
+        </form>
+        <p id="newsletter-msg" class="hidden text-xs text-goldLight mt-2">Welcome to the M. private list.</p>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-cream/60 gap-4 text-center sm:text-left">
+      <p>&copy; 2026 M. — Crafting Graceful Creations. All Rights Reserved.</p>
+      <div class="flex items-center gap-5 text-base">
+        <a href="#" aria-label="Instagram" class="hover:text-goldLight transition"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook" class="hover:text-goldLight transition"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://wa.me/923145656060" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="hover:text-goldLight transition"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Fixed Bottom Navigation Bar (< 1024px) -->
+  <nav aria-label="Mobile Quick Navigation" class="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-ivory/95 backdrop-blur-md border-t border-sand shadow-[0_-4px_20px_rgba(43,33,27,0.08)]">
+    <div class="grid grid-cols-5 h-16">
+      <button onclick="navigateTo('home')" data-bottom-nav="home" class="bottom-nav-btn flex flex-col items-center justify-center gap-1 text-terracotta transition">
+        <i class="fa-solid fa-house text-sm"></i>
+        <span class="text-[10px] font-semibold tracking-wider uppercase">Home</span>
+      </button>
+      <button onclick="navigateTo('collections')" data-bottom-nav="collections" class="bottom-nav-btn flex flex-col items-center justify-center gap-1 text-bronze hover:text-terracotta transition">
+        <i class="fa-solid fa-layer-group text-sm"></i>
+        <span class="text-[10px] font-medium tracking-wider uppercase">Archive</span>
+      </button>
+      <button onclick="navigateTo('suiting')" data-bottom-nav="suiting" class="bottom-nav-btn flex flex-col items-center justify-center gap-1 text-bronze hover:text-terracotta transition">
+        <i class="fa-solid fa-scroll text-sm"></i>
+        <span class="text-[10px] font-medium tracking-wider uppercase">Suiting</span>
+      </button>
+      <button onclick="navigateTo('leather')" data-bottom-nav="leather" class="bottom-nav-btn flex flex-col items-center justify-center gap-1 text-bronze hover:text-terracotta transition">
+        <i class="fa-solid fa-briefcase text-sm"></i>
+        <span class="text-[10px] font-medium tracking-wider uppercase">Leather</span>
+      </button>
+      <button onclick="navigateTo('contact')" data-bottom-nav="contact" class="bottom-nav-btn flex flex-col items-center justify-center gap-1 text-bronze hover:text-terracotta transition">
+        <i class="fa-solid fa-location-dot text-sm"></i>
+        <span class="text-[10px] font-medium tracking-wider uppercase">Contact</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Quick View Modal -->
+  <div id="quickview-modal" onclick="if(event.target===this) closeQuickView()" class="fixed inset-0 z-50 hidden items-center justify-center bg-espresso/75 backdrop-blur-sm p-3 sm:p-4 overflow-y-auto">
+    <div class="bg-ivory rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-sand relative my-auto">
+      <button onclick="closeQuickView()" aria-label="Close Modal" class="sticky top-3 float-right mr-3 mt-3 z-20 w-9 h-9 rounded-full bg-cream/95 hover:bg-terracotta hover:text-ivory text-espresso flex items-center justify-center transition shadow-md">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="quickview-content" class="grid grid-cols-1 md:grid-cols-2 clear-both md:clear-none -mt-12 md:mt-0"></div>
+    </div>
+  </div>
+
+  <!-- Slide-Over Shopping Bag Drawer -->
+  <div id="cart-overlay" onclick="toggleCart(false)" class="fixed inset-0 z-50 hidden bg-espresso/60 backdrop-blur-xs transition-opacity"></div>
+  <aside id="cart-drawer" class="fixed top-0 right-0 z-50 h-full w-full max-w-md bg-ivory shadow-2xl border-l border-sand transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-4 sm:p-6 border-b border-sand flex items-center justify-between bg-cream/60">
+      <div>
+        <h3 class="font-serif text-xl sm:text-2xl font-semibold text-espresso">Your Shopping Bag</h3>
+        <p id="cart-subtitle" class="text-xs text-bronze">0 items selected</p>
+      </div>
+      <button onclick="toggleCart(false)" aria-label="Close Bag" class="w-9 h-9 rounded-full hover:bg-sand flex items-center justify-center text-espresso transition">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+    </div>
+
+    <div id="cart-items-container" class="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4 sm:space-y-5"></div>
+
+    <div id="cart-footer" class="p-4 sm:p-6 border-t border-sand bg-cream/70 space-y-3 sm:space-y-4">
+      <div class="flex items-center justify-between text-sm">
+        <span class="text-bronze uppercase tracking-wider text-xs font-semibold">Subtotal</span>
+        <span id="cart-subtotal" class="font-serif text-xl sm:text-2xl font-bold text-espresso">Rs. 0</span>
+      </div>
+      <p class="text-[11px] text-bronze/80">Complimentary insured shipping on orders above Rs. 15,000 ($55).</p>
+      <button onclick="handleCheckout()" class="w-full py-3.5 rounded-lg bg-brick hover:bg-espresso text-ivory text-xs uppercase tracking-[0.2em] font-semibold transition shadow-md">
+        Proceed to Order
+      </button>
+    </div>
+  </aside>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-20 lg:bottom-6 left-4 right-4 sm:left-auto sm:right-6 z-50 transform translate-y-28 opacity-0 transition-all duration-300 bg-espresso text-ivory px-4 sm:px-5 py-3.5 rounded-xl shadow-2xl border border-gold/40 flex items-center gap-3 text-xs sm:text-sm max-w-md sm:ml-auto">
+    <i class="fa-solid fa-check-circle text-goldLight shrink-0"></i>
+    <span id="toast-message">Added to bag</span>
+  </div>
+
+  <!-- Application Logic & Pages CMS Data Loader -->
+  <script>
+    const DEFAULT_SITE_DATA = {
+      heroSlides: [
+        {
+          stepLabel: "01 / Bespoke Atelier",
+          title: "Bespoke Tailored Charcoal Suiting",
+          ctaText: "Explore",
+          targetPage: "suiting",
+          image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1200&q=85"
+        },
+        {
+          stepLabel: "02 / Mill-Direct Weaves",
+          title: "Fine Unstitched Wool & Egyptian Cotton",
+          ctaText: "Shop Fabrics",
+          targetPage: "suiting",
+          image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1200&q=85"
+        },
+        {
+          stepLabel: "03 / Saddle-Stitched Hide",
+          title: "Handcrafted Full-Grain Heritage Leather",
+          ctaText: "Shop Leather",
+          targetPage: "leather",
+          image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=1200&q=85"
+        },
+        {
+          stepLabel: "04 / Ceremonial Silhouettes",
+          title: "Luxury Menswear Atelier Craftsmanship",
+          ctaText: "All Collections",
+          targetPage: "collections",
+          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=85"
+        }
+      ],
+      ceoMessage: {
+        eyebrow: "From the Founder’s Desk",
+        quote: "True luxury never shouts—it is felt in the quiet weight of long-staple cotton, the discipline of a hand-basted lapel, and leather that grows more dignified with every passing decade.",
+        messageBody: "When we opened the doors of M. in Chakwal, our promise was simple: to bring honest mill-direct textiles, uncompromising bespoke tailoring, and full-grain leathercraft together under one roof. Every piece that bears our needle-and-button mark is inspected personally so that what you wear today becomes an heirloom tomorrow.",
+        founderName: "Jawad Ali",
+        roleTitle: "Founder & Chief Executive Officer, M.",
+        locationNote: "Flagship Atelier — Chakwal",
+        portraitImage: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=85"
+      },
+      products: [
+        {
+          id: 1,
+          featured: true,
+          name: "Imperial Giza 86 Egyptian Cotton",
+          category: "suiting",
+          categoryLabel: "Fine Suiting",
+          pricePKR: 9500,
+          unit: "4.5m Unstitched Cut",
+          colors: ["#F4EFE6", "#2C353D", "#C8B89D"],
+          colorNames: ["Ivory Cream", "Midnight Slate", "Warm Sand"],
+          options: ["4.5m Cut (Unstitched)", "Custom Stitched (+Rs. 3,500)"],
+          image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80",
+          description: "Long-staple Egyptian cotton woven for crisp breathability, luminous sheen, and graceful drape across all seasons."
+        },
+        {
+          id: 2,
+          featured: true,
+          name: "The Heritage Saddle Weekender",
+          category: "leather",
+          categoryLabel: "Heritage Leather",
+          pricePKR: 28500,
+          unit: "Full-Grain Cowhide",
+          colors: ["#6F331E", "#2B211B"],
+          colorNames: ["Terracotta Cognac", "Espresso Brown"],
+          options: ["Standard Cabin Size", "Monogrammed Initials"],
+          image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80",
+          description: "Hand-cut full-grain leather weekender bag featuring solid antique brass hardware, reinforced rolled handles, and cotton twill lining."
+        },
+        {
+          id: 3,
+          featured: true,
+          name: "Super 130s Merino Wool Suiting",
+          category: "suiting",
+          categoryLabel: "Fine Suiting",
+          pricePKR: 16800,
+          unit: "4m Suiting Length",
+          colors: ["#262930", "#4A3B32", "#595D62"],
+          colorNames: ["Charcoal Weave", "Roasted Umber", "Ash Herringbone"],
+          options: ["4m Fabric Only", "Bespoke 2-Piece Suit"],
+          image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=800&q=80",
+          description: "Worsted merino wool with natural wrinkle recovery and refined twill texture—ideal for ceremonial suits and formal coats."
+        },
+        {
+          id: 4,
+          featured: true,
+          name: "Artisanal Jamawar & Raw Silk Waistcoat",
+          category: "tailored",
+          categoryLabel: "Tailored Essentials",
+          pricePKR: 12900,
+          unit: "Ready-to-Wear / Bespoke",
+          colors: ["#3B2C24", "#83371E", "#D5C7B2"],
+          colorNames: ["Deep Bronze", "Rust Terracotta", "Champagne Beige"],
+          options: ["S", "M", "L", "XL", "Custom Measure"],
+          image: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=800&q=80",
+          description: "Structured mandarin-collar waistcoat finished with antique metallic buttons, breathable lining, and hand-piped pockets."
+        },
+        {
+          id: 5,
+          featured: false,
+          name: "Hand-Burnished Dress Belt & Folio Set",
+          category: "leather",
+          categoryLabel: "Heritage Leather",
+          pricePKR: 8200,
+          unit: "Vegetable-Tanned Leather",
+          colors: ["#7B3B24", "#231B16"],
+          colorNames: ["Saddle Tan", "Onyx Espresso"],
+          options: ["Waist 32-34", "Waist 36-38", "Waist 40-42"],
+          image: "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
+          description: "Paired full-grain leather dress belt with brushed brass buckle and matching slim document & card folio."
+        },
+        {
+          id: 6,
+          featured: false,
+          name: "Royal Boski Finish Wash & Wear",
+          category: "suiting",
+          categoryLabel: "Fine Suiting",
+          pricePKR: 7800,
+          unit: "4.5m Unstitched Cut",
+          colors: ["#F2E6D0", "#3D4849", "#242424"],
+          colorNames: ["Classic Cream", "Olive Slate", "Jet Black"],
+          options: ["4.5m Cut (Unstitched)", "Custom Stitched (+Rs. 3,500)"],
+          image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=800&q=80",
+          description: "Silky-soft micro-fiber blend mimicking pure heritage boski with effortless crease resistance and fluid movement."
+        },
+        {
+          id: 7,
+          featured: false,
+          name: "Hand-Stitched Leather Peshawari & Derby",
+          category: "leather",
+          categoryLabel: "Heritage Leather",
+          pricePKR: 11500,
+          unit: "Goodyear Welted Sole",
+          colors: ["#5C2E1E", "#1F1A17"],
+          colorNames: ["Chestnut Patina", "Classic Black"],
+          options: ["EU 41 / UK 7", "EU 42 / UK 8", "EU 43 / UK 9", "EU 44 / UK 10"],
+          image: "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=800&q=80",
+          description: "Supple calfskin upper with cushioned leather footbed and hand-stitched outsole crafted for all-day ceremonial comfort."
+        },
+        {
+          id: 8,
+          featured: false,
+          name: "Tailored Ceremonial Prince Coat",
+          category: "tailored",
+          categoryLabel: "Tailored Essentials",
+          pricePKR: 24500,
+          unit: "Bespoke / Standard Fit",
+          colors: ["#2B211B", "#3A433E"],
+          colorNames: ["Espresso Noir", "Hunter Olive"],
+          options: ["M", "L", "XL", "Bespoke Measurement"],
+          image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80",
+          description: "Sharp architectural shoulders, bespoke gold-trimmed buttons, and hand-basted lapel roll for evening occasions."
+        },
+        {
+          id: 9,
+          featured: false,
+          name: "Executive Leather Briefcase & Laptop Satchel",
+          category: "leather",
+          categoryLabel: "Heritage Leather",
+          pricePKR: 21000,
+          unit: "Fits up to 16\" Laptop",
+          colors: ["#83371E", "#3B2C24"],
+          colorNames: ["Brick Cognac", "Dark Walnut"],
+          options: ["Standard Strap", "Personalized Monogram"],
+          image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+          description: "Structured everyday leather briefcase with padded laptop compartment, fountain pen loops, and detachable shoulder strap."
+        }
+      ]
+    };
+
+    let SITE_DATA = structuredClone(DEFAULT_SITE_DATA);
+
+    function resolveCmsImage(path) {
+      if (!path) return '';
+      if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('data:')) {
+        return path;
+      }
+      return path.startsWith('./') || path.startsWith('/') ? path : `./${path}`;
+    }
+
+    function getCategoryLabel(product) {
+      if (product.categoryLabel) return product.categoryLabel;
+      const map = {
+        suiting: 'Fine Suiting',
+        leather: 'Heritage Leather',
+        tailored: 'Tailored Essentials'
+      };
+      return map[product.category] || 'Collection Piece';
+    }
+
+    async function loadPagesCmsContent() {
+      try {
+        const response = await fetch(`./content/site-data.json?v=${Date.now()}`, { cache: 'no-store' });
+        if (!response.ok) return;
+
+        const cmsJson = await response.json();
+        if (cmsJson && typeof cmsJson === 'object') {
+          if (Array.isArray(cmsJson.heroSlides) && cmsJson.heroSlides.length > 0) {
+            SITE_DATA.heroSlides = cmsJson.heroSlides.map(s => ({
+              ...s,
+              image: resolveCmsImage(s.image)
+            }));
+          }
+          if (cmsJson.ceoMessage && typeof cmsJson.ceoMessage === 'object') {
+            SITE_DATA.ceoMessage = {
+              ...SITE_DATA.ceoMessage,
+              ...cmsJson.ceoMessage,
+              portraitImage: resolveCmsImage(cmsJson.ceoMessage.portraitImage || SITE_DATA.ceoMessage.portraitImage)
+            };
+          }
+          if (Array.isArray(cmsJson.products) && cmsJson.products.length > 0) {
+            SITE_DATA.products = cmsJson.products.map((p, idx) => ({
+              id: p.id || idx + 1,
+              featured: Boolean(p.featured),
+              name: p.name || 'Untitled Piece',
+              category: p.category || 'suiting',
+              categoryLabel: getCategoryLabel(p),
+              pricePKR: Number(p.pricePKR) || 0,
+              unit: p.unit || 'Standard Cut',
+              colors: Array.isArray(p.colors) && p.colors.length ? p.colors : ['#2B211B'],
+              colorNames: Array.isArray(p.colorNames) && p.colorNames.length ? p.colorNames : ['Classic'],
+              options: Array.isArray(p.options) && p.options.length ? p.options : ['Standard'],
+              image: resolveCmsImage(p.image),
+              description: p.description || ''
+            }));
+          }
+        }
+      } catch (err) {
+        console.info('Running with built-in DEFAULT_SITE_DATA fallback.');
+      }
+    }
+
+    let activePage = 'home';
+    let collectionsSubFilter = 'all';
+    let searchQuery = '';
+    let currency = 'PKR';
+    const exchangeRate = 278;
+    let cart = [];
+
+    function navigateTo(pageName, pushHash = true) {
+      const validPages = ['home', 'collections', 'suiting', 'leather', 'contact'];
+      if (!validPages.includes(pageName)) pageName = 'home';
+      activePage = pageName;
+
+      document.querySelectorAll('.page-view').forEach(view => {
+        view.classList.add('hidden');
+        view.classList.remove('page-view-active');
+      });
+
+      const targetView = document.getElementById(`page-${pageName}`);
+      if (targetView) {
+        targetView.classList.remove('hidden');
+        void targetView.offsetWidth;
+        targetView.classList.add('page-view-active');
+      }
+
+      document.querySelectorAll('.nav-link').forEach(link => {
+        if (link.dataset.nav === pageName) {
+          link.classList.add('border-terracotta', 'text-terracotta');
+          link.classList.remove('border-transparent');
+        } else {
+          link.classList.remove('border-terracotta', 'text-terracotta');
+          link.classList.add('border-transparent');
+        }
+      });
+
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        if (link.dataset.mobileNav === pageName) {
+          link.classList.add('text-terracotta', 'bg-cream/80', 'font-semibold');
+          link.classList.remove('text-espresso', 'font-medium');
+        } else {
+          link.classList.remove('text-terracotta', 'bg-cream/80', 'font-semibold');
+          link.classList.add('text-espresso', 'font-medium');
+        }
+      });
+
+      document.querySelectorAll('.bottom-nav-btn').forEach(btn => {
+        if (btn.dataset.bottomNav === pageName) {
+          btn.classList.add('text-terracotta');
+          btn.classList.remove('text-bronze');
+        } else {
+          btn.classList.remove('text-terracotta');
+          btn.classList.add('text-bronze');
+        }
+      });
+
+      if (pushHash) {
+        history.replaceState(null, '', pageName === 'home' ? '#' : `#${pageName}`);
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      renderAllProductViews();
+    }
+
+    function navigateToSection(sectionId) {
+      if (activePage !== 'home') {
+        navigateTo('home', false);
+        setTimeout(() => {
+          const el = document.getElementById(sectionId);
+          if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }, 80);
+      } else {
+        const el = document.getElementById(sectionId);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function renderCeoCard() {
+      const container = document.getElementById('ceo-card-container');
+      if (!container) return;
+      const ceo = SITE_DATA.ceoMessage;
+
+      container.innerHTML = `
+        <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+          <div class="lg:col-span-4 relative min-h-[260px] sm:min-h-[340px] bg-espresso overflow-hidden">
+            <img
+              src="${ceo.portraitImage}"
+              alt="${ceo.founderName} — ${ceo.roleTitle}"
+              onerror="this.src='https://placehold.co/800x950/2B211B/FAF6F0?text=${encodeURIComponent(ceo.founderName)}'"
+              class="w-full h-full object-cover object-top"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-espresso/80 via-transparent to-transparent lg:hidden"></div>
+            <div class="absolute bottom-4 left-5 right-5 lg:hidden text-ivory">
+              <p class="font-script text-2xl text-goldLight">${ceo.founderName}</p>
+              <p class="text-[10px] uppercase tracking-[0.2em] text-cream/85">${ceo.roleTitle}</p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-8 p-6 sm:p-10 lg:p-12 flex flex-col justify-between bg-cream relative">
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-terracotta/10 text-terracotta text-[10px] sm:text-[11px] uppercase tracking-[0.2em] font-semibold mb-4 sm:mb-5">
+                <i class="fa-solid fa-feather text-[10px]"></i>
+                <span>${ceo.eyebrow}</span>
+              </div>
+
+              <blockquote class="font-serif italic text-xl sm:text-3xl text-espresso leading-snug mb-4 sm:mb-5">
+                “${ceo.quote}”
+              </blockquote>
+
+              <p class="text-xs sm:text-base text-bronze leading-relaxed mb-6 sm:mb-8">
+                ${ceo.messageBody}
+              </p>
+            </div>
+
+            <div class="pt-5 sm:pt-6 border-t border-sand flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+              <div>
+                <p class="font-script text-2xl sm:text-3xl text-terracotta leading-none mb-1">${ceo.founderName}</p>
+                <p class="text-[11px] sm:text-xs uppercase tracking-[0.18em] font-semibold text-espresso">${ceo.roleTitle}</p>
+              </div>
+              <div class="inline-flex items-center gap-2 text-[10px] sm:text-[11px] uppercase tracking-widest text-bronze bg-ivory px-3.5 py-2 rounded-lg border border-sand self-start sm:self-auto">
+                <i class="fa-solid fa-compass-drafting text-gold"></i>
+                <span>${ceo.locationNote}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    let currentHeroSlide = 0;
+    let heroAutoSlideTimer = null;
+
+    function renderHeroSlides() {
+      const track = document.getElementById('hero-slider-track');
+      const dotsContainer = document.getElementById('hero-dots');
+      if (!track || !dotsContainer) return;
+
+      track.innerHTML = SITE_DATA.heroSlides.map(slide => `
+        <div class="w-full shrink-0 relative aspect-[4/3] sm:aspect-[16/11]">
+          <img
+            src="${slide.image}"
+            alt="${slide.title}"
+            onerror="this.src='https://placehold.co/1200x825/2B211B/FAF6F0?text=${encodeURIComponent(slide.title)}'"
+            class="w-full h-full object-cover pointer-events-none"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#1A120E]/95 via-[#1A120E]/20 to-transparent"></div>
+          <div class="absolute bottom-3.5 sm:bottom-4 left-4 sm:left-5 right-4 sm:right-5 flex items-end justify-between gap-3">
+            <div class="min-w-0">
+              <span class="text-[10px] uppercase tracking-[0.2em] text-goldLight font-semibold block truncate">${slide.stepLabel}</span>
+              <h2 class="font-serif text-lg sm:text-2xl text-ivory font-semibold leading-snug line-clamp-1">${slide.title}</h2>
+            </div>
+            <button onclick="navigateTo('${slide.targetPage}')" class="shrink-0 text-[11px] uppercase tracking-widest text-cream hover:text-goldLight underline py-1">
+              ${slide.ctaText}
+            </button>
+          </div>
+        </div>
+      `).join('');
+
+      dotsContainer.innerHTML = SITE_DATA.heroSlides.map((_, idx) => `
+        <button onclick="goToHeroSlide(${idx})" aria-label="Slide ${idx + 1}" class="hero-dot ${idx === 0 ? 'w-6 bg-goldLight' : 'w-2 bg-cream/30 hover:bg-cream/60'} h-1.5 rounded-full transition-all"></button>
+      `).join('');
+
+      updateHeroSliderUI();
+    }
+
+    function initHeroTouchSwipe() {
+      const sliderBox = document.getElementById('hero-slider-container');
+      if (!sliderBox) return;
+      let startX = 0;
+
+      sliderBox.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        pauseHeroSlider();
+      }, { passive: true });
+
+      sliderBox.addEventListener('touchend', (e) => {
+        const endX = e.changedTouches[0].clientX;
+        const diff = startX - endX;
+        if (Math.abs(diff) > 40) {
+          if (diff > 0) nextHeroSlide();
+          else prevHeroSlide();
+        } else {
+          resumeHeroSlider();
+        }
+      }, { passive: true });
+    }
+
+    function updateHeroSliderUI() {
+      const track = document.getElementById('hero-slider-track');
+      const ambientBg = document.getElementById('hero-ambient-bg');
+      const counter = document.getElementById('hero-slide-counter');
+      const dots = document.querySelectorAll('.hero-dot');
+      const slides = SITE_DATA.heroSlides;
+
+      if (track) track.style.transform = `translateX(-${currentHeroSlide * 100}%)`;
+      if (ambientBg && slides[currentHeroSlide]) ambientBg.src = slides[currentHeroSlide].image;
+      if (counter) counter.textContent = `${currentHeroSlide + 1} / ${slides.length}`;
+
+      dots.forEach((dot, idx) => {
+        if (idx === currentHeroSlide) {
+          dot.classList.remove('w-2', 'bg-cream/30');
+          dot.classList.add('w-6', 'bg-goldLight');
+        } else {
+          dot.classList.remove('w-6', 'bg-goldLight');
+          dot.classList.add('w-2', 'bg-cream/30');
+        }
+      });
+    }
+
+    function nextHeroSlide() {
+      currentHeroSlide = (currentHeroSlide + 1) % SITE_DATA.heroSlides.length;
+      updateHeroSliderUI();
+      startHeroAutoSlide();
+    }
+
+    function prevHeroSlide() {
+      currentHeroSlide = (currentHeroSlide - 1 + SITE_DATA.heroSlides.length) % SITE_DATA.heroSlides.length;
+      updateHeroSliderUI();
+      startHeroAutoSlide();
+    }
+
+    function goToHeroSlide(index) {
+      currentHeroSlide = index;
+      updateHeroSliderUI();
+      startHeroAutoSlide();
+    }
+
+    function startHeroAutoSlide() {
+      clearInterval(heroAutoSlideTimer);
+      heroAutoSlideTimer = setInterval(() => {
+        currentHeroSlide = (currentHeroSlide + 1) % SITE_DATA.heroSlides.length;
+        updateHeroSliderUI();
+      }, 4500);
+    }
+
+    function pauseHeroSlider() {
+      clearInterval(heroAutoSlideTimer);
+    }
+
+    function resumeHeroSlider() {
+      startHeroAutoSlide();
+    }
+
+    function formatPrice(pkrAmount) {
+      if (currency === 'PKR') {
+        return 'Rs. ' + pkrAmount.toLocaleString('en-PK');
+      } else {
+        const usd = Math.round(pkrAmount / exchangeRate);
+        return '$' + usd.toLocaleString('en-US');
+      }
+    }
+
+    function toggleCurrency() {
+      currency = currency === 'PKR' ? 'USD' : 'PKR';
+      document.getElementById('currency-toggle').textContent = currency;
+      renderAllProductViews();
+      renderCart();
+      showToast(`Currency switched to ${currency}`);
+    }
+
+    function buildProductCardHTML(product) {
+      return `
+        <article class="product-card group bg-cream/55 rounded-2xl border border-sand overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:border-terracotta/40">
+          <div>
+            <div class="relative aspect-[4/3] bg-sand overflow-hidden">
+              <img
+                src="${product.image}"
+                alt="${product.name}"
+                onerror="this.src='https://placehold.co/800x600/4A382E/FAF6F0?text=${encodeURIComponent(product.name)}'"
+                class="product-img w-full h-full object-cover transition-transform duration-500"
+              />
+              <span class="absolute top-3 left-3 bg-ivory/95 text-espresso text-[10px] font-semibold uppercase tracking-widest px-2.5 sm:px-3 py-1 rounded-md shadow-xs">
+                ${product.categoryLabel}
+              </span>
+              <button
+                onclick="openQuickView(${product.id})"
+                class="absolute bottom-3 right-3 px-3 py-2 rounded-lg bg-espresso/90 hover:bg-terracotta text-ivory text-[11px] uppercase tracking-wider font-medium opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity shadow-md"
+              >
+                Quick View
+              </button>
+            </div>
+
+            <div class="p-4 sm:p-5">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="text-[11px] uppercase tracking-wider text-bronze/80 truncate">${product.unit}</span>
+                <div class="flex items-center gap-1.5 shrink-0" title="${product.colorNames.join(', ')}">
+                  ${product.colors.map(hex => `<span class="w-3.5 h-3.5 rounded-full border border-espresso/25 shadow-2xs" style="background-color: ${hex};"></span>`).join('')}
+                </div>
+              </div>
+
+              <h3 class="font-serif text-xl sm:text-2xl font-semibold text-espresso group-hover:text-terracotta transition leading-snug mb-2">
+                <button onclick="openQuickView(${product.id})" class="text-left">${product.name}</button>
+              </h3>
+
+              <p class="text-xs text-bronze leading-relaxed line-clamp-2 mb-3 sm:mb-4">
+                ${product.description}
+              </p>
+            </div>
+          </div>
+
+          <div class="px-4 sm:px-5 pb-4 sm:pb-5 pt-3 border-t border-sand/80 flex items-center justify-between gap-2">
+            <div>
+              <span class="block text-[10px] uppercase tracking-widest text-bronze/70">Price</span>
+              <span class="font-serif text-lg sm:text-xl font-bold text-espresso">${formatPrice(product.pricePKR)}</span>
+            </div>
+            <button
+              onclick="addToCart(${product.id})"
+              class="px-3.5 sm:px-4 py-2.5 rounded-lg bg-brick hover:bg-espresso text-ivory text-[11px] sm:text-xs uppercase tracking-widest font-semibold transition flex items-center gap-1.5 sm:gap-2 shadow-xs shrink-0"
+            >
+              <i class="fa-solid fa-plus text-[10px]"></i> Add to Bag
+            </button>
+          </div>
+        </article>
+      `;
+    }
+
+    function matchesSearchFilter(p) {
+      if (!searchQuery) return true;
+      return (
+        p.name.toLowerCase().includes(searchQuery) ||
+        p.description.toLowerCase().includes(searchQuery) ||
+        p.categoryLabel.toLowerCase().includes(searchQuery)
+      );
+    }
+
+    function renderAllProductViews() {
+      const homeGrid = document.getElementById('home-featured-grid');
+      if (homeGrid) {
+        const featured = SITE_DATA.products.filter(p => p.featured);
+        homeGrid.innerHTML = featured.map(buildProductCardHTML).join('');
+      }
+
+      const colGrid = document.getElementById('collections-grid');
+      const colCount = document.getElementById('collections-count');
+      if (colGrid) {
+        const list = SITE_DATA.products.filter(p => {
+          const catMatch = collectionsSubFilter === 'all' || p.category === collectionsSubFilter;
+          return catMatch && matchesSearchFilter(p);
+        });
+        if (colCount) colCount.textContent = `Showing ${list.length} ${list.length === 1 ? 'Piece' : 'Pieces'}`;
+        colGrid.innerHTML = list.length
+          ? list.map(buildProductCardHTML).join('')
+          : `<div class="col-span-full text-center py-14 bg-cream/60 rounded-2xl border border-sand px-4"><p class="font-serif text-2xl text-espresso mb-2">No pieces matched your search.</p><button onclick="clearSearchAndFilters()" class="mt-3 px-5 py-2.5 rounded-lg bg-brick text-ivory text-xs uppercase tracking-widest font-semibold">Reset Filters</button></div>`;
+      }
+
+      const suitGrid = document.getElementById('suiting-grid');
+      const suitCount = document.getElementById('suiting-count');
+      if (suitGrid) {
+        const list = SITE_DATA.products.filter(p => p.category === 'suiting' && matchesSearchFilter(p));
+        if (suitCount) suitCount.textContent = `${list.length} Fabrics`;
+        suitGrid.innerHTML = list.map(buildProductCardHTML).join('');
+      }
+
+      const leatherGrid = document.getElementById('leather-grid');
+      const leatherCount = document.getElementById('leather-count');
+      if (leatherGrid) {
+        const list = SITE_DATA.products.filter(p => p.category === 'leather' && matchesSearchFilter(p));
+        if (leatherCount) leatherCount.textContent = `${list.length} Pieces`;
+        leatherGrid.innerHTML = list.map(buildProductCardHTML).join('');
+      }
+    }
+
+    function setCollectionsSubFilter(cat) {
+      collectionsSubFilter = cat;
+      document.querySelectorAll('.col-filter-btn').forEach(btn => {
+        if (btn.dataset.colFilter === cat) {
+          btn.classList.remove('bg-cream', 'text-bronze');
+          btn.classList.add('bg-espresso', 'text-ivory');
+        } else {
+          btn.classList.remove('bg-espresso', 'text-ivory');
+          btn.classList.add('bg-cream', 'text-bronze');
+        }
+      });
+      renderAllProductViews();
+    }
+
+    function toggleSearchBar() {
+      const drawer = document.getElementById('search-drawer');
+      drawer.classList.toggle('hidden');
+      if (!drawer.classList.contains('hidden')) {
+        document.getElementById('search-input').focus();
+      }
+    }
+
+    function handleSearch(val) {
+      searchQuery = val.trim().toLowerCase();
+      if (searchQuery && activePage === 'home') {
+        navigateTo('collections');
+      }
+      renderAllProductViews();
+    }
+
+    function clearSearchAndFilters() {
+      searchQuery = '';
+      const input = document.getElementById('search-input');
+      if (input) input.value = '';
+      setCollectionsSubFilter('all');
+    }
+
+    function openQuickView(productId) {
+      const p = SITE_DATA.products.find(item => item.id === productId);
+      if (!p) return;
+
+      const modal = document.getElementById('quickview-modal');
+      const content = document.getElementById('quickview-content');
+
+      content.innerHTML = `
+        <div class="aspect-[4/3] md:aspect-auto bg-sand">
+          <img src="${p.image}" alt="${p.name}" onerror="this.src='https://placehold.co/800x800/4A382E/FAF6F0?text=${encodeURIComponent(p.name)}'" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-5 sm:p-8 flex flex-col justify-between space-y-5 sm:space-y-6">
+          <div>
+            <span class="text-xs uppercase tracking-[0.2em] text-terracotta font-semibold">${p.categoryLabel}</span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-espresso mt-1 mb-2">${p.name}</h3>
+            <p class="font-serif text-xl sm:text-2xl font-bold text-brick mb-3 sm:mb-4">${formatPrice(p.pricePKR)} <span class="text-xs font-sans font-normal text-bronze">/ ${p.unit}</span></p>
+            <p class="text-xs sm:text-sm text-bronze leading-relaxed mb-5 sm:mb-6">${p.description}</p>
+
+            <div class="mb-4">
+              <label class="block text-xs uppercase tracking-wider font-semibold text-espresso mb-2">Available Shades</label>
+              <div class="flex flex-wrap gap-2">
+                ${p.colorNames.map((name, idx) => `
+                  <label class="cursor-pointer inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-sand bg-cream/60 text-xs text-espresso hover:border-terracotta">
+                    <input type="radio" name="qv-color" value="${name}" ${idx === 0 ? 'checked' : ''} class="accent-terracotta" />
+                    <span class="w-3 h-3 rounded-full border border-espresso/20" style="background:${p.colors[idx]}"></span>
+                    <span>${name}</span>
+                  </label>
+                `).join('')}
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-semibold text-espresso mb-2">Cut / Sizing Option</label>
+              <select id="qv-option" class="w-full px-3.5 py-2.5 rounded-lg bg-cream border border-sand text-xs sm:text-sm text-espresso focus:outline-none focus:border-terracotta">
+                ${p.options.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
+              </select>
+            </div>
+          </div>
+
+          <button onclick="addFromQuickView(${p.id})" class="w-full py-3.5 rounded-lg bg-brick hover:bg-espresso text-ivory text-xs uppercase tracking-[0.2em] font-semibold transition shadow-md">
+            Add Piece to Bag
+          </button>
+        </div>
+      `;
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeQuickView() {
+      const modal = document.getElementById('quickview-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function addFromQuickView(productId) {
+      const selectedColor = document.querySelector('input[name="qv-color"]:checked')?.value;
+      const selectedOption = document.getElementById('qv-option')?.value;
+      addToCart(productId, selectedColor, selectedOption);
+      closeQuickView();
+    }
+
+    function addToCart(productId, customColor = null, customOption = null) {
+      const product = SITE_DATA.products.find(p => p.id === productId);
+      if (!product) return;
+
+      const color = customColor || product.colorNames[0];
+      const option = customOption || product.options[0];
+      const variantKey = `${product.id}-${color}-${option}`;
+
+      const existing = cart.find(item => item.variantKey === variantKey);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({
+          variantKey,
+          id: product.id,
+          name: product.name,
+          pricePKR: product.pricePKR,
+          image: product.image,
+          color,
+          option,
+          qty: 1
+        });
+      }
+
+      renderCart();
+      showToast(`Added "${product.name}" to your bag`);
+    }
+
+    function updateQty(variantKey, delta) {
+      const item = cart.find(i => i.variantKey === variantKey);
+      if (!item) return;
+      item.qty += delta;
+      if (item.qty <= 0) {
+        cart = cart.filter(i => i.variantKey !== variantKey);
+      }
+      renderCart();
+    }
+
+    function renderCart() {
+      const container = document.getElementById('cart-items-container');
+      const badge = document.getElementById('cart-badge');
+      const subtitle = document.getElementById('cart-subtitle');
+      const subtotalEl = document.getElementById('cart-subtotal');
+
+      const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+      const totalPKR = cart.reduce((sum, item) => sum + item.pricePKR * item.qty, 0);
+
+      badge.textContent = totalItems;
+      subtitle.textContent = `${totalItems} ${totalItems === 1 ? 'item' : 'items'} selected`;
+      subtotalEl.textContent = formatPrice(totalPKR);
+
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="h-full flex flex-col items-center justify-center text-center py-12 px-4">
+            <div class="w-16 h-16 rounded-full bg-cream border border-sand flex items-center justify-center text-bronze/50 mb-4">
+              <i class="fa-solid fa-bag-shopping text-2xl"></i>
+            </div>
+            <p class="font-serif text-2xl text-espresso mb-1">Your bag is empty</p>
+            <p class="text-xs text-bronze max-w-xs mb-6">Explore our fine suiting fabrics, bespoke waistcoats, and heritage leather pieces.</p>
+            <button onclick="toggleCart(false)" class="px-6 py-2.5 rounded-lg bg-espresso text-ivory text-xs uppercase tracking-widest font-semibold">
+              Continue Browsing
+            </button>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = cart.map(item => `
+        <div class="flex gap-3.5 sm:gap-4 bg-cream/60 p-3 sm:p-3.5 rounded-xl border border-sand">
+          <img src="${item.image}" alt="${item.name}" onerror="this.src='https://placehold.co/200x200/4A382E/FAF6F0?text=M.'" class="w-16 h-16 sm:w-20 sm:h-20 rounded-lg object-cover shrink-0 bg-sand" />
+          <div class="flex-1 min-w-0">
+            <h4 class="font-serif text-base sm:text-lg font-semibold text-espresso truncate">${item.name}</h4>
+            <p class="text-[11px] text-bronze truncate">${item.color} &bull; ${item.option}</p>
+            <p class="text-sm font-semibold text-terracotta mt-1">${formatPrice(item.pricePKR * item.qty)}</p>
+
+            <div class="flex items-center gap-3 mt-2">
+              <div class="inline-flex items-center border border-sand rounded-md bg-ivory">
+                <button onclick="updateQty('${item.variantKey}', -1)" class="w-7 h-7 flex items-center justify-center text-xs text-espresso hover:bg-cream">-</button>
+                <span class="px-2.5 text-xs font-semibold text-espresso">${item.qty}</span>
+                <button onclick="updateQty('${item.variantKey}', 1)" class="w-7 h-7 flex items-center justify-center text-xs text-espresso hover:bg-cream">+</button>
+              </div>
+              <button onclick="updateQty('${item.variantKey}', -999)" class="text-[11px] text-bronze/70 hover:text-terracotta underline py-1">Remove</button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function toggleCart(open) {
+      const drawer = document.getElementById('cart-drawer');
+      const overlay = document.getElementById('cart-overlay');
+      if (open) {
+        overlay.classList.remove('hidden');
+        drawer.classList.remove('translate-x-full');
+      } else {
+        overlay.classList.add('hidden');
+        drawer.classList.add('translate-x-full');
+      }
+    }
+
+    function handleCheckout() {
+      if (cart.length === 0) {
+        showToast('Your shopping bag is currently empty.');
+        return;
+      }
+      const orderNum = 'M-' + Math.floor(100000 + Math.random() * 900000);
+      cart = [];
+      renderCart();
+      toggleCart(false);
+      showToast(`Order ${orderNum} placed! Our concierge will confirm shortly.`);
+    }
+
+    function submitBespokeForm(e) {
+      e.preventDefault();
+      document.getElementById('bespoke-success').classList.remove('hidden');
+      e.target.reset();
+      showToast('Bespoke tailoring appointment requested!');
+    }
+
+    function submitContactForm(e) {
+      e.preventDefault();
+      document.getElementById('contact-success').classList.remove('hidden');
+      e.target.reset();
+      showToast('Inquiry received! Our team will contact you shortly.');
+    }
+
+    function subscribeNewsletter(e) {
+      e.preventDefault();
+      document.getElementById('newsletter-msg').classList.remove('hidden');
+      e.target.reset();
+    }
+
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    function closeMobileMenu() {
+      document.getElementById('mobile-menu').classList.add('hidden');
+    }
+
+    let toastTimer;
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-message').textContent = msg;
+      toast.classList.remove('translate-y-28', 'opacity-0');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.add('translate-y-28', 'opacity-0');
+      }, 3200);
+    }
+
+    window.addEventListener('DOMContentLoaded', async () => {
+      await loadPagesCmsContent();
+      renderHeroSlides();
+      initHeroTouchSwipe();
+      renderCeoCard();
+      renderAllProductViews();
+      renderCart();
+      startHeroAutoSlide();
+
+      const initialHash = window.location.hash.replace('#', '');
+      if (['collections', 'suiting', 'leather', 'contact'].includes(initialHash)) {
+        navigateTo(initialHash, false);
+      } else if (['bespoke', 'story'].includes(initialHash)) {
+        navigateToSection(initialHash);
+      }
+    });
+  </script>
+</body>
+</html>
