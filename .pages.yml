@@ -1,0 +1,114 @@
+media:
+  input: assets/uploads
+  output: assets/uploads
+
+content:
+  - name: site-content
+    label: Storefront, Products & CEO Note
+    path: content/site-data.json
+    type: file
+    fields:
+      - name: ceoMessage
+        label: Founder & CEO Editorial Card
+        type: object
+        fields:
+          - name: portraitImage
+            label: CEO Portrait Photo
+            type: image
+          - name: founderName
+            label: Founder / CEO Name
+            type: string
+          - name: roleTitle
+            label: Title
+            type: string
+          - name: eyebrow
+            label: Top Label
+            type: string
+          - name: quote
+            label: Highlighted Quote
+            type: text
+          - name: messageBody
+            label: Message Paragraph
+            type: text
+          - name: locationNote
+            label: Atelier Badge Text
+            type: string
+
+      - name: products
+        label: Products Catalog (Suiting, Leather & Tailored)
+        type: object
+        list: true
+        fields:
+          - name: id
+            label: Product ID (Unique Number)
+            type: number
+          - name: featured
+            label: Show on Home Page Signature Creations?
+            type: boolean
+          - name: name
+            label: Product Name
+            type: string
+          - name: category
+            label: Department
+            type: select
+            options:
+              values:
+                - value: suiting
+                  label: Fine Suiting
+                - value: leather
+                  label: Heritage Leather
+                - value: tailored
+                  label: Tailored Essentials
+          - name: pricePKR
+            label: Price (PKR)
+            type: number
+          - name: unit
+            label: Cut / Material Subtitle (e.g. 4.5m Unstitched Cut)
+            type: string
+          - name: image
+            label: Product Photo
+            type: image
+          - name: description
+            label: Product Description
+            type: text
+          - name: colorNames
+            label: Color Names
+            type: string
+            list: true
+          - name: colors
+            label: Color Hex Swatches (e.g. #2B211B)
+            type: string
+            list: true
+          - name: options
+            label: Size / Cut Options
+            type: string
+            list: true
+
+      - name: heroSlides
+        label: Home Page Hero Slider
+        type: object
+        list: true
+        fields:
+          - name: stepLabel
+            label: Slide Subtitle (e.g. 01 / Bespoke Atelier)
+            type: string
+          - name: title
+            label: Slide Headline
+            type: string
+          - name: ctaText
+            label: Link Text
+            type: string
+          - name: targetPage
+            label: Destination Page
+            type: select
+            options:
+              values:
+                - value: suiting
+                  label: Fine Suiting Page
+                - value: leather
+                  label: Heritage Leather Page
+                - value: collections
+                  label: All Collections Page
+          - name: image
+            label: Slide Image
+            type: image
